@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+    <mlc_path></mlc_path>
+    <language>0</language>
+    <use_discord_presence>true</use_discord_presence>
+    <fullscreen_menubar>false</fullscreen_menubar>
+    <GamePaths/>
+    <GameCache/>
+    <GraphicPack/>
+    <Graphic>
+        <VSync>false</VSync>
+        <GX2DrawdoneSync>true</GX2DrawdoneSync>
+        <SeparableShaders>true</SeparableShaders>
+        <DisablePrecompiledShaders>false</DisablePrecompiledShaders>
+        <UpscaleFilter>1</UpscaleFilter>
+        <FullscreenScaling>0</FullscreenScaling>
+    </Graphic>
+    <Audio>
+        <api>0</api>
+        <delay>2</delay>
+        <TVChannels>1</TVChannels>
+        <PadChannels>1</PadChannels>
+        <TVVolume>50</TVVolume>
+        <PadVolume>0</PadVolume>
+        <TVDevice>default</TVDevice>
+        <PadDevice></PadDevice>
+    </Audio>
+    <Online>
+        <AccountId></AccountId>
+    </Online>
+</content>

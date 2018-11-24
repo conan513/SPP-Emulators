@@ -1,0 +1,58 @@
+[wx] Failed to load shared library 'E:\Cucc\Server\SPP-Emulators\Playstation-2\plugins\DEV9ghzdrk.dll' (error 126: a megadott modul nem található.)
+
+Loading plugins from E:\Cucc\Server\SPP-Emulators\Playstation-2\plugins...
+	Bound   GS: GSdx32-AVX2.dll [GSdx 20181124023402 (MSVC 19.00 AVX2/AVX2) 1.1.0]
+	Bound  PAD: LilyPad.dll [LilyPad (20181124023402) 0.12.1]
+	Bound SPU2: Spu2-X.dll [SPU2-X 20181124023402 2.0.0]
+	Bound CDVD: cdvdGigaherz.dll [cdvdGigaherz 20181124023402 0.11.0]
+	Bound  USB: USBnull.dll [USBnull Driver 20181124023402 0.7.0]
+	Bound   FW: FWnull.dll [FWnull Driver 20181124023402 0.7.0]
+	Bound DEV9: DEV9null.dll [DEV9null Driver 20181124023402 0.5.0]
+Plugins loaded successfully.
+
+Initializing plugins...
+	Init GS
+	Init PAD
+	Init SPU2
+	Init CDVD
+	Init USB
+	Init FW
+	Init DEV9
+Plugins initialized successfully.
+
+Bios Found: Europe  v01.60(04/10/2001)  Console
+Bios Found: Europe  v02.00(14/06/2004)  Console
+Bios Found: Japan   v01.00(17/01/2000)  Console
+Bios Found: USA     v01.60(07/02/2002)  Console
+Shutting down plugins...
+PCSX2 1.5.0-20181124023402 - compiled on Nov 24 2018
+Savestate version: 0x9a0d0000
+
+Host Machine Init:
+	Operating System =  Microsoft Windows 10 Pro (build 17134), 64-bit
+	Physical RAM     =  16343 MB
+	CPU name         =  Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+	Vendor/Model     =  GenuineIntel (stepping 03)
+	CPU speed        =  4.006 ghz (8 logical threads)
+	x86PType         =  Standard OEM
+	x86Flags         =  bfebfbff 7ffafbbf
+	x86EFlags        =  2c100000
+
+x86 Features Detected:
+	SSE2.. SSE3.. SSSE3.. SSE4.1.. SSE4.2.. AVX.. AVX2.. FMA
+
+Plugins shutdown successfully.
+Reserving memory for recompilers...
+
+Loading plugins from E:\Cucc\Server\SPP-Emulators\Playstation-2\plugins...
+	Bound   GS: GSdx32-AVX2.dll [GSdx 20181124023402 (MSVC 19.00 AVX2/AVX2) 1.1.0]
+	Bound  PAD: LilyPad.dll [LilyPad (20181124023402) 0.12.1]
+	Bound SPU2: Spu2-X.dll [SPU2-X 20181124023402 2.0.0]
+	Bound CDVD: cdvdGigaherz.dll [cdvdGigaherz 20181124023402 0.11.0]
+	Bound  USB: USBnull.dll [USBnull Driver 20181124023402 0.7.0]
+	Bound   FW: FWnull.dll [FWnull Driver 20181124023402 0.7.0]
+	Bound DEV9: DEV9null.dll [DEV9null Driver 20181124023402 0.5.0]
+Plugins loaded successfully.
+
+(GameDB) 9768 games on record (loaded in 162ms)
+(GameDB) Unloading...

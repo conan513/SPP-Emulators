@@ -1,0 +1,1527 @@
+================================READ THIS===============================
+calb, Galtor and _Demo_ hold no warranties of any kind for this product.
+You're using ePSXe at your own risk. The authors can't be held liable
+or responsible for any damage which results from using the emulator,
+it's plugin or anything described in this documentation in any way.
+================================READ THIS===============================
+
+Index
+*****
+0. Introduction.
+1. What's New?
+2. What do you need to run ePSXe?
+3. Usage.
+   3.1  Which files are necessary to run ePSXe?
+   3.2. Controlling the emulator.
+   3.3. GUI options
+        3.3.1. File
+        3.3.2. Run
+        3.3.3. Config
+        3.3.4. Options
+        3.3.5. Help
+   3.4. Configure the emulator
+        3.4.1. Configuring the emulator
+        3.4.2. Configuring the video options
+        3.4.3. Configuring the CD-ROM
+        3.4.4. Configuring the sound
+        3.4.5. Configuring the input
+        3.4.6. Choosing MemoryCards files
+   3.5. Command line options
+   3.6. Memory card support
+   3.7. Savestates.
+   3.8. Netplay plugins.
+   3.9. Cheat Codes.
+   3.10. Local netplay support
+4. Implemented features
+5. Compatibility in ePSXe
+6. Where can I get help with the emulator?
+
+Appendix
+********
+A. FAQ's
+B. Thanks
+C. Legal Stuff
+
+****************************************************************************
+0.  Introduction
+****************************************************************************
+
+ePSXe is a Sony Playstation emulator for your PC running under 
+Windows Vista+ or linux. It takes advantage of the popular PSEmu Pro 
+plugin system.
+
+****************************************************************************
+1.  What's New?
+****************************************************************************
+
+ePSXe v2.0.5, released on 06.23.2016
+
+- Updated the x86 recompiler to use the same recompiler than in the rest of 
+  versions (Android, Linux x64, Mac ...). Now it should be easier to
+  fix problems in all versions.
+
+- Ported the local netplay from Android (Experimental). This version is 
+  compatible using local netplay with the rest of ePSXe versions from the 
+  version 2.0.5 (MacOSX, Linux x86, Linux x64 and Android - version 2.0.6).
+  (Additional info the epsxe docs)
+
+- Ported the GPUCORE threading mode from the Android version. The PC CPUs
+  are faster than Android CPUs, so it will improve less FPS. (This
+  option is better when the CPU is slower).
+
+- Added new threading modes to the Pete OpenGL2 Core Plugin. It includes
+  a basic 2-thread mode, and 2 extra modes adding soft/hardware effects.
+  (It could improve some effects, for example the burning photo on the 
+  start of Castlevania)
+
+- In the INPUTCORE plugin, swapped the vibration actuators when using the
+  Xinput mode (to match to real PSX Left/Right). Besides when using a 
+  gamepad in digital mode, now you can use the left stick as the dpad.
+
+- Fixed the >2GB PBP roms support. Now it should be able to run the PSX2PSP
+  isos bigger than 2GB as Final Fantasy VIII PSP pack.
+
+- Fixed the cheat codes support when running on the interpreter mode.
+
+- Added a new option in the cheat codes window to download cheat codes from
+  the ePSXe version (Thanks to psxdatacenter.com)
+
+- Fixes to the core which made more games playable or better working.
+     - WING COMMANDER IV
+     - MONKEY HERO
+
+******************************************************************************
+2.  What do you need to run EPSXE?
+******************************************************************************
+
+Minimum system requirements:
+  800Mhz 32-bit CPU
+  256 MB of RAM
+  Fast graphic card
+  x16 CD-ROM
+  Windows XP SP3
+  DirectX 8 or OpenGL 1.0
+
+Recommended system configuration:
+  Fast dual-core CPU
+  512 MB of RAM
+  OpenGL 2.0 + GLSL shaders video card
+  Fast CD-ROM
+  Windows Vista+
+  DirectX 8
+
+*****************************************************************************
+3. Usage
+*****************************************************************************
+
+3.1  Which files are necessary to run ePSXe?
+
+* ePSXe.exe
+* a psx bios (scph1001.bin and scph7502.bin have been tested and proved to work)
+* PSEmu Pro GPU plugin (optional)
+* PSEmu Pro SPU plugin (optional)
+* PSEmu Pro CD-Rom plugin (optional)
+* PSemu Pro Input plugin (optional)
+
+3.2 Controlling the emulator
+
+  ePSXe supports direct input and also features an option which allows you
+  to configure the pads through the UI. It is very simple and intuitive :
+  Click config -> game pads -> pad1/pad2 (the one you want to configure),
+  and you will see a picture of a pad and some fields with the names of 
+  the keys. Select the psx button what you want configure and then hit the 
+  key you want to assign to it. (in case you want use a joystick, hit the 
+  joystick button instead of a key).
+
+  Starting with ePSXe 2.0 you can use a external input plugin like Pokopom.
+
+  Starting with ePSXe 1.2.0 you can select the analog axis that you want to
+  use, selecting the axis to configure and moving the axis in your joystick.
+  You can also configure the effect that will be done in every motor
+  in the force feedback.
+
+  ePSXe includes 8 fast keys to use some options of the emu:
+
+  - F1-Savestate in selected slot.
+  - F2-Increase slot. (max = 5)
+  - F3-Loadstate from selected slot.
+  - F4-Enable/Disable Framelimit.
+  - F5-Toggle Digital pad/Selected type of PSX pad.
+  - F6-Select what pad will be affected by key F5.
+  - F7-Swap on the fly the current GPU for the GPUCORE.
+  - F8-Make a snapshot to snap directory.
+
+Player 1 - default
+------------------
+
+    PC Keys              PSX Buttons
+------------------------------------------
+       S         |          Square
+       D         |          Triangle
+       Z         |            X
+       X         |          Circle
+       C         |          Select
+       V         |          Start
+       W         |            L1
+       Q         |            L2
+       E         |            R1
+       R         |            R2
+   Arrow keys    |    Directional buttons
+
+Player 2 - default
+------------------
+Disabled by default.
+
+
+3.3. GUI options.
+
+On startup, you can see ePSXe's menus which include the following
+options:
+
+3.3.1. File.
+
+ (*) Run CDROM : Runs a PSX CD-Rom
+
+ (*) Run ISO : Runs a PSX iso file. Select an iso file and click ok to start.
+
+ (*) Run PSX-EXE : Runs a PSX-EXE file (exe or .zip), or runs
+     a multifile .PLL, which has to be included with the other files in a .zip
+
+ (*) Run BIOS : Runs the PSX bios. (use this to edit the memory cards)
+
+ (*) Open Gamelist : Open a window to config a gamelist (or click on
+     the letters "PSX" from the logo).
+
+ (*) Local Netplay: Open a window to select player1 or player, to play in local
+                net. It is required to have the same game in both devices, 
+                and the game have to be indexed in the gamelist.
+
+ (*) Change Disc : Use this option to switch between discs/isos in 
+     games with multiple CD-Roms.
+
+ (*) Exit : Quit the emulator.
+
+3.3.2. Run.
+
+ (*) Continue : Continues a previously stopped cdrom/iso/psx-exe/bios game
+
+ (*) Reset : Reset emulation.
+
+ (*) Save State (Slot) : used to make a state. (F1)
+ 
+ (*) Load State (Slot) : used to load a state. (F3)
+
+ (*) Enable Logs : It will show a windows with logs from the emu while running.
+
+3.3.3. Config.
+
+ (see 3.4. Configure the emulator)
+
+3.3.4. Options.
+
+  (*) CPU Overclocking: PSX CPU overclocking (from x1 until x4)
+
+  (*) CPU Mode : Dynarec (faster) or Interpreter (more accurated)
+
+  (*) GTE Hacks - Widescreen : Enable widescreen hack (16:9). 
+      Warning: it is a hack and some game could be glitches.
+
+  (*) GTE Hacks - Subpixel precision : enable subpixel precision when
+      increasing internal rendering resolution. It requires a GPU plugin
+      supporting this feature.
+
+  (*) UI Language : select the windows language or English
+
+  (*) Auto ppf support : use ppf patches.
+
+  (*) Cheat codes : open cheat codes dialog to enable/disable cheat codes.
+
+  (*) Games Profiles : during gameplay it is possible to save the current preferences
+      and the next time that you run that game it will use the saved preferences.
+
+3.3.5. Help.
+
+  (*) How to config : Open you browser in how to config web.
+
+  (*) Visit EPSXE webpage : Open your browser with the epsxe webpage.
+
+  (*) About : Credits.
+
+
+3.4. Configuring the emulator.
+
+Basically you need to configure the bios, your video card, CD-ROM drive,
+your sound card and the input in order to get the emulator fully working.
+
+For video, sound, cdrom and input, you can select the plugins from
+config->Plugins. Using config->(video/sound/cdrom/gamepads) you can
+directly access the selected plugin configuration. 
+
+3.4.1. Configuring the bios.
+
+In ePSXe, click config -> bios. In the new window, you can see a text box 
+which shows the currently selected bios and a browse button. Click this button
+and select the BIOS you want to use. During testing we found out that the 
+scph1001.bin and scph7502.bin BIOS' are compatible, but the scph1000.bin won't
+work. Please remember you may only be in possession of the copyrighted BIOS 
+when you're legally entitled.
+
+Starting  with ePSXe 1.9.25, an internal HLE bios is supported. The
+compatibility is high but not the accuracy, the memcards could also not
+work on some games.
+
+3.4.2. Configuring the video options.
+
+In ePSXe, click config -> plugins -> video. In the new window, you can see a dropdown 
+menu which shows the currently selected video plugin(*). Select your favourite video 
+plugin and click on the configure button, and, finally click ok.
+
+ePSXe includes 2 internal GPU plugins (by default):
+1) GPUCORE. It is a soft plugin ported from the android version. It uses opengl2
++ shaders to render. This plugin is very accurate and it supports a lot of
+features such as increasing internal resolution, shaders, 2D filters and
+brightness profiles ...
+
+2) Pete OpenGL2 Core Plugin. It is Pete`s OGL2 plugin integrated in ePSXe. It
+requires a good videocard (nvidia/ati), but it includes a wonderful bunch of
+features to enhanced the graphics.
+
+(*) EPSXE uses PSEmu Pro's video plugins, so you can get other compatible GPU
+plugins from psxdatacenter.com
+
+
+3.4.3. Configuring the CD-ROM
+
+in ePSXe, select config -> plugins -> cdrom. In the new window, you can see a dropdown 
+menu which shows the currently selected CD-ROM plugin(*). Select the plugin of your
+choise and click on the "Configure" button afterwards. There's yet another dropdown
+menu, in which you can select the drive letter of the CD-ROM you want to use. In case
+you want to use your primary CD-ROM, just stay with the default entry. For using
+another CD-ROM, just select the preferred drive and click on OK. We mainly tested
+the emulator with the internal cdrom plugins, and with the Pete cdrom plugin.
+
+Win2k users should use the win2k native CDR plugin, it worked fine
+during our tests.
+
+3.4.4. Configuring the sound.
+
+In ePSXe, select config -> plugins -> sound. In the new window, you can see a dropdown 
+menu which shows the currently selected sound plugin(*). Select the sound plugin of
+your choise and click on the "Configure" button afterwards. In the appearing
+window, there're several check boxes where you can enable disable certain
+sound options. The playstation uses 3 different kind of sounds : ADPCM, XA
+and CDDA.
+
+* Enable Sound  (Select this to enable ADPCM sound) - Used to enable ADPCM
+sound, and it is necessary to get XA sound.
+
+(*) EPSXE can use PSEmu Pro's sound plugin system or an internal
+    sound system. If you want to use psemu plugins you need download the
+    plugins first. Recommeded are Pete, Eternal and the internal one.
+    There is other very good like Andy and Iori plugins.
+
+3.4.5. Configuring the input.
+
+In ePSXe, select config -> plugins -> input port1/port2. In the new window, you can 
+see a dropdown  menu which shows the currently selected input plugin(*). Select 
+the input plugin of your choise and click on the "Configure" button afterwards. 
+
+From ePSXe 2.0.0, it supports external input plugins as Pokopom.
+
+3.4.6. Choosing MemoryCards files.
+
+In this window, you can select the memory cards files what you want to use.
+ePSXe supports the most important memory cards formats, .MC(R), .GME, .MCD
+and .MEM. You can disable/enable the memcards from this windows if you need to
+do it.
+
+Epsxe by default use 2 shader memcards for all games, but there is a option to
+force to use 2 individual memcards by game.
+
+3.5. Command line options.
+
+epsxe [options] [psx-exe]
+
+ (*) -lib                      : Loads the libps.exe, which is necessary for running
+                                 several demos. You should have the file libps.exe in
+                                 ePSXe's root directory.
+
+ (*) -i                        : Run Interpreter CPU mode.
+
+ (*) -nocd                     : Disables the CD-ROM emulation. ( not recommended ! ;-) )
+
+ (*) -sound/nosound            : Enable/Disable sound.
+
+ (*) -xasound/-noxasound       : Enable/Disable XA sound.
+
+ (*) -audiocd/noaudiocd        : Enable/Disable CDDA audio.
+
+ (*) -forcespu/-noforcespu     : Enable/Disable SPU irq always ON.
+
+ (*) -cdtiming/-nocdtiming     : Enable/Disable CDR accurate timing. (Gran turismo 2, 
+                                 Legend of Legaia, Dragon Valor, Point Blank series ...)
+
+ (*) -forcepad/-noforcepad     : Enable/Disable SIO irq always ON. (F4) 
+
+ (*) -memcard/-nomemcard       : Enable/Disable memcard emulation. (Track & Field)
+
+
+ (*) -mdec/-nomdec             : Enable/Disable MDEC emulation. 
+
+ (*) -mdectiming/-nomdectiming : Enable/Disable MDEC accurate timing.
+
+ (*) -adjusttiming             : Enable on the fly re-adjust timing.
+
+ (*) -oldtiming                : Uses pre-1.5.1 timing.
+
+ (*) -fastboot/slowboot        : Fast/Slow boot cdrom (psx logo).
+
+ (*) -nogui                    : Disable internal GUI.
+
+ (*) -ppf/-nppf                : Enable/Disable ppf patches.
+
+ (*) -loadppf <file>           : Load ppf file.
+
+ (*) -loadiso <file>           : Loads iso file (CloneCD/Cdrwin).
+
+ (*) -loadcheat <file>         : Loads a internal cheat file.
+
+ (*) -loadmemc0 <file>         : Map file to memcard 0.
+
+ (*) -loadmemc1 <file>         : Map file to memcard 1.
+
+ (*) -ssv0                     : Save sstates version v.0
+                                 (1.4.0 or less compatible)
+
+ (*) -mouseN                   : Enable mouse emulation. (number of port)
+
+ (*) -analogN                  : Enable analog pad emulation (number of pad)
+
+ (*) -konami/gun               : Enable konami/namco gun emulation
+
+ (*) -interlaced               : Run in interlaced mode (internal gpu core)
+
+ (*) -autofirefreq <num>       : Select autofire freq (number of frames)
+  
+ (*) -autofirebutton <but>     : Select autofire button (button 1-16)
+ 
+ (*) -soundlatency <num>       : Select the sound latency (0-5)
+
+ (*) -dither <mode>            : Select dither mode (0-3 in internal gpu core)
+
+ (*) -gpu2dcore <alg>          : Select soft 2d filters (0-4) (2xsai-xbrz)
+
+ (*) -gpuremovebb              : Enable to disable top/bottom black bars (gpu core)
+
+ (*) -gteaccuracyhack <val>    : Enable subpixel precision (0-1)
+
+ (*) -inshader <val>           : Select internal shader (0-4 internal gpu core)
+ 
+ (*) -shader <dir>             : Select shader to load.
+
+ (*) -gpuratio <ratio>         : Select to increase interal resolution (1-2-4 gpu core)
+
+ (*) -gpuscanlines             : Enable scanlines (gpu core)
+
+ (*) -gpuscanlinestrans <t>    : Scanlines transparency (0-255 gpu core)
+
+ (*) -gpuscanlinesthick <t>    : Scanlines thickness (1-8 gpu core)
+
+     [psx-exe]                 : PSX-EXE, normal, zipped or .PLL with
+                                 all files included in a .zip
+
+3.6. Memory cards support.
+
+ePSXe also comes along with memory card support. The used cards are saved
+in 2 files in your \memcards directory. The first one is named epsxe000.mcr 
+and the second one epsxe001.mcr. Each file has a size of 128 KB (which is
+PSX standard), and the format is simply a dump of real memory cards.
+
+ePSXe doesn't come with a memory card editor, but you can use the option
+Load -> Run BIOS to get to the real PSX memory card editor, from where
+you can delete / move savegames. In case you're using Pete's OpenGL / D3D
+plugins, don't forget to enable offscreen rendering to see this menu 
+correctly.
+
+ePSXe 1.0.1 includes a memory card file selector, so you can select which file
+you want to use in which slot. ePSXe also has support for different memory card
+file supports, like Dexdrive (.gme), PSEmu Pro (.mc) and several others.
+
+3.7. Savestates.
+
+ePSXe 1.2.0 supports savestates. They are files that
+contain the state of the emulator when the key was hit, so you
+can restore to the state later in that same exact point.
+
+F1 = Save the state to the slot selected
+F2 = Increase the slot. (If you use the on fly menus
+in gpu plugins you can see the slot selected)
+(MAX = 5 slots)
+F3 = Load the state of the slot selected
+
+ePSXe 1.2.0, 1.4.0   supports savestates version 0.
+ePSXe 1.5.0          supports savestates version 0 and 1.
+ePSXe 1.6.0          supports savestates version 0, 1 and 2.
+ePSXe 1.7.0          supports savestates version 0, 1, 2 and 3.
+ePSXe 1.8.0, 1.9.25  supports savestates version 0, 1, 2 and 3.
+ePSXe >=2.0.0        supports savestates version 0, 1, 2, 3 and 4.
+
+ePSXe for Windows/Linux supports the savestates done by Android
+and vice versa.
+
+3.8. Netplay plugins.
+
+ePSXe 1.4.0 supports netplay plugins. To select the plugin
+you should use the option config->netplay. Read the
+docs included in the netplugin pack.
+
+3.9. Cheat Codes.
+
+ePSXe supports GameShark cheat codes. You can load cheat codes in the
+emulator creating a file called "cheats/SXXX_XXX.XX.txt"
+(where SXXXX_XXX.XX is the PS-EXE name of the game, which you can see
+enabling the ePSXe Log Console).
+For example in Final Fantay 8 US-NTSC the file name is:
+
+"cheats/SLUS_008.92.txt".
+
+ePSXe supports until 256 codes per file. The file format is:
+
+#description of cheat code 1
+XXXXXXXX YYYY
+ZZZZZZZZ AAAA
+#descripion of cheat code 2
+NNNNNNNN MMMM
+
+For example for Final Fantasy 8 US-NTSC, it could be "cheats/SLUS_008.92.txt":
+
+#Zell level 20
+800778a4 4a38
+
+Currently, only 80XXXXXX, 30XXXXXX, 50XXXXXX, 1F800XXX, 0XXXXXX, 11XXXXXX, 
+20XXXXXX, 21XXXXXX gameshark codes are supported, the rest will be ignored.
+You can find GameShark codes in a lot of webpages in internet, like:
+http://psxdatacenter.com
+http://www.gamegenie.com/cheats/gameshark/ps1/index.html
+After that, re-load your game, and you will be able to enable/disable the
+gameshark codes from the menu "cheat codes" on gameplay (the codes are 
+disabled by default).
+
+Other way to get cheat codes working is download PEC
+(http://pec.emucheater.com) for in game cheating.
+
+3.10. Local netplay support (experimental)
+
+From the version 2.0.5, ePSXe supports local netplay without using external
+plugins. This feature is compatible with the rest of ePSXe ports (MacOSX,
+Linux, Android ...). In order to play you need the same bios in both devices,
+and the same games in both devices. In order to find the game, this game have
+to be available in the gamelist feature in both devices. 
+
+How to use:
+
+Player1:
+
+1) File>Local netplay>Player1
+2) Select the game from the gamelist and press run
+3) You can see your local IP address in the console, it will be necessary in 
+   player2 to connect.
+4) Wait to the game to start.
+
+Player2:
+1) File>Local netplay>Player2
+2) Insert the local IP address from the player1
+3) Wait to the game to start
+
+When using this feature, it will use isolated memcards by game stored in the
+folder epsxe/memcards/net/ in the player1, and it will get synched in the
+same folder in the player2.
+
+It is possible to load savestates in the player1, and it will be sent by
+net to the player2.
+
+******************************************************************************
+4.  Implemented features
+******************************************************************************
+
+- The complete r3000 instruction set
+
+- Imcomplete COP0 coprocessor emulation 
+
+- GTE coprocessor emulation 
+
+- Sio emulation 
+
+- Memory card support
+
+- ISO support
+
+- PSEmu Pro video plugins support 
+
+- PSEmu Pro sound plugins support 
+
+- PSEmu Pro CD-ROM plugins support
+
+- PSEmu Pro Input plugins support
+
+- PSEmu Pro Netplay plugins support
+
+- Mdec decoder ( The PSX comes with a jpeg decoder which is mainly used
+  for MDEC movies. It includes a new MDEC engine programmed in v.1.0.1)
+
+- CDDA sound support
+
+- XA sound support
+
+- GUI
+
+*******************************************************************************
+5.  Compatibility in EPSXE
+*******************************************************************************
+
+Compatibility in ePSXe hasn't been tested that much yet, actually it has been
+mainly tested with PAL games. Current compatibility percentage is superior
+at 95%.
+
+Some games known to work are:
+
+- Colin McRae Rally 1 and 2
+- Crash Bandicoot 1, 2 and 3
+- Driver 1 and 2
+- Fifa 99/2000.
+- Final Fantasy VII, VIII and IX
+- Iss98, Isspro evolution
+- Knockout Kings 99, 2000
+- NBA Live 2000, and 2001
+- Need For Speed III, IV, V
+- Ridge Racer
+- Ridge Racer type 4
+- Soulblade
+- Syphon Filter 1, 2
+- Tekken 1, 2 and 3
+- Tigger Woods 99, 2000
+- Tomb Raider 1, 2, 3 and 4
+- Vagrant Story
+- Xenogears
+- Valkyrie Profile
+- and many more ...
+
+Once you start a game in ePSXe various things can occur:
+
+   - The game works correctly.
+       Solution: "Be happy !" :) Send us a screenshot when you're
+       through the game.
+
+   - The game works but you get graphics problems.
+       Solution : ePSXe uses the PSEmu Pro plugins to draw the graphics to
+       your screen, so you could try a different plugin.
+
+   - The game works but you get 3d graphics or light problems.
+       Solution:  ePSXe has a more or less complete GTE emulation, but
+       several GTE opcodes are still very buggy :-(. Wait for the  next
+       version. You can also try another plugin to make sure it's really
+       a GTE problem (Pete's soft GPU plugin is very very compatible !)
+
+   - The GAME still won't work.
+       Solution:  If, after all, the game STILL won't work, than it's most
+       propably simply not compatible with ePSXe right now. You should wait
+       for the next version of the emulator. 
+
+Sound.
+
+   ePSXe comes with support for the PSEmu Pro sound plugins in this version.
+   This includes ADPCM, CDDA and partial XA sound.  Common problems
+   with the sound:
+
+   - The game plays no sound at all
+       Solution: Check the sound settings in the menu.
+
+   - XA sound playback is jerky.
+       Solution: You need 50/60 fps in order to get accurate sound.
+
+******************************************************************************
+6. Where can I get help with the emulator?
+******************************************************************************
+
+There are a number of ways to receive help. The first thing you should do is
+read the documentation, since the majority of questions are already
+answered in it. Also, you can use the following emulation forums:
+
+http://ngemu.com/forums/epsxe-discussion.7/
+
+You can follow the ePSXe news in our twitter account (@epsxeteam):
+https://twitter.com/epsxeteam
+or Facebook:
+https://www.facebook.com/Epsxe-1522225218080824/
+
+This software is freeware, and we don't have a lot of time to answer
+questions, but if any of the above methods fail, you can try to contact
+us using the following ways, but don't always expect a reply from us !
+
+calb, Galtor, _Demo_
+-----------------------
+email: epsxepc@gmail.com
+[Include in the body of the email that you are using the PC Version]
+
+******************************************************************************
+A.  Frequently Asked Questions
+******************************************************************************
+
+* (Your favorite game here) doesn't work with EPSXE?  Why not ?
+
+  We're sorry.  For now, try another emulator or a real playstation :).
+
+* When will the next version of EPSXE be released?
+
+  We don't know and won't tell you. Check the homepage for more infos.
+
+* Where can I get the latest version of EPSXE?
+
+  http://www.epsxe.com/
+  In addition, a number of emulation related websites will carry it too.
+
+*****************************************************************************
+B. Changelog
+*****************************************************************************
+
+ePSXe v2.0.2, released on 04.14.2016
+
+- In the first place, this version includes some important changes to improve
+  the accuracy, sadly it could breaks games, if you find that a broken game
+  on this version please report to epsxepc@gmail.com
+
+- Multi-language support. Added French and Russian languages (Thanks to
+  Benjamin Sisko and paul_met). Other languages could be added in a future
+  version.
+
+- Fixed a delay slot bug in the interpreter cpu mode. It should run again
+  some games broken on interpreter cpu mode on the v2.0. Fixed loading
+  savestates from the UI in interpreter mode.
+
+- Improved CDROM timing accuracy,bugs and change disc problems. Improved the
+  timing when seeking and reading cdrom sectors, fixed Tales of Destiny 2
+  changedisc and fixed Twins Story and Harukanaru Toki no Naka de - Banjou Yuugi.
+
+- Improved the GPU timing (when using the ePSXe GPUCORE). It fixes or improve
+  some games as: Namco Vol 4, Soul Blade, Tunguska, Derby Stallion,
+  Derby Stallion 99, NBA Live 99, Sangokushi Eiketsuden, Dukes of Hazzard,
+  Alice in Cyberland, Vampire Hunter D, Macross Digital Mission VF-X,
+  Monaco Grand Prix Racing, Power Dolls 2, Spots Goes To Hollywood ...
+
+- Improved the GPUCORE. Fixed a bug while transfering data, improved screen
+  centering (Star Ocean 2, Jumping Flash 2, Hogs of War...), fixed some
+  gargabe on the borders when changing the resolution, fixed a scrolling
+  problem, fixed a screen ratio problem when changing from windowing to
+  fullscreen on the fly, added vsync support, and added support to select the
+  blitter as OpenGL2 or OpenGL1 (it should be compatible with some old
+  videocards, but shader support is not supported in OpenGL1 mode).
+
+- Improved the openGL2 plugin. Fixes Xmen Mutant Academy 1 & 2, Nascar
+  Thunder 2002/2003/2004, Pro Pinball - Big Race Usa, Pro Pinball - TimeShock,
+  Pro Pinball Fantastic Journey and Worms Pinball (use framebuffer effects=0
+  in the pinball games).
+
+- Changes in the SPUCORE. Implemented the SPU mute flag, it fixes some sound
+  glitches during the pause in the game: Car & Driver Presents - Grand Tour
+  Racing 98.
+
+- Changes in the INPUTCORE. Now it has native supports for XInput devices,
+  select Xinput when configurating the gamepad in the config dialog if you
+  want use the XInput API. (mapping buttons is not required).
+
+- Fixed the external input plugins support when stopping and pressing continue.
+
+- Fixed the changedisc option when using external GPU plugins.
+
+- Added support to overclock the PSX CPU. You can select x1, x1.5, x2.0, x3.0
+  and x4.0. Be careful it could break compatibility.
+
+ePSXe v2.0, released on 02.17.2016
+
+- First of all, ePSXe 2.0 now requires Windows Vista or superior. While 
+  it could work on Windows XP SP3, it has not been tested.
+
+- Multi-language support. This is the first ePSXe release officially supporting
+  multiple languages. Currently there is support for English, Spanish, Japanese
+  (thanks to Nekokabu) and Italian (thanks to Domus). If you want to help us
+  translate the emulator to other language let us know at epsxepc@gmail.com.
+
+- Added a gamelist window. Now you can open a gamelist window by selecting
+  File->Open Gamelist or clicking on the letters "PSX" from the ePSXe logo.
+  From this window you can select the folders to scan and click on refresh to
+  create a gamelist with the games found in the those folders. Additionally you
+  can get the mini-icon covers for the games in the gamelist. There is also
+  support for multi-PBP files and ECM files.
+
+- Improved CPU accuracy. Dynarec and the interpreter accuracy has been improved
+  fixing some possible corner cases. The main goal of the dynarec is performance,
+  so it is less accurate than the interpreter mode.
+
+- Adjusted overall timing. The FPS and Mhz have been adjusted to match the real
+  PSX on NTSC and PAL. It helps synchronization in some games such as Bust a
+  Groove 1 & 2 during songs (those games requires low sound latency).
+
+- Improved GTE support. The GTE accuracy has been improved to match the
+  Android version. In addition this version support 2 hacks for the GTE.
+  Widescreen support which is used to stretch the screen to 16:9 without
+  modifying the aspect of 3D objects. Given it is a hack it will fail in some
+  games, especially those combining 2D and 3D.
+  Subpixel precision (gte accuracy hack thanks to Edbla) which allows more
+  precision to be kept through computations but requires a gpu renderer
+  supporting this feature.
+
+- Ported the Soft GPU from the Android version. The new GPU Core requires
+  a videocard supporting OpenGL2 + GLSL shader. It is a very accurate soft GPU,
+  supporting features such as:
+    - Increased internal resolution at x2 and x4. (very fast CPU required for x4)
+    - Brightness profiles, to increase the brightness in dark games.
+    - Stretching modes: 4:3, stretching or widescreen
+    - 2D filters: 2xSai, xBRZ (thanks to Zenju)
+    - Shaders: FXAA/CRT-Lottes (thanks to Lottes), CRT-Hyllian/xBR-LV2-3D (thanks
+      to Hyllian)
+    - Simple custom Shaders (a pack with examples is available on epsxe.com/files)
+    - Scanlines suport
+    - Removing of top/bottom black bands in some games.
+    - Sub-pixel precision (or gte accuracy hack).
+  (Special thanks to Pete Bernert :)
+
+- Included the Pete Opengl2 GPU core. It is the Pete OGL2 gpu core included in
+  the ePSXe Core. This version is the actual Pete OGL2 plugin supporting a 
+  sub-pixel precision (or gte accuracy hack), memory detection and fix the game
+  Guardian Recall. Millions of thanks to Pete Bernert, Tapcio and Edbla. 
+
+- Teamviewer incompatibility is resolved with the internal GPU plugins. The GPU
+  Core and Pete Opengl2 GPU core are not affected by the incompatibility with
+  the TeamViewer software.
+
+- Added a configuration window to select options for the internal SPU Plugin.
+  Currently it is possible to select the sound latency (normal or very low -
+  required on Bust a Groove 1 & 2) and enable/disable some sound effects
+  (filters and reverb).
+
+- Fixed support for CDDA music in external SPU plugins.
+
+- Improved the internal input plugin. Improved multitap to support a lot of games
+  that did not work in the previous versions. Added support to autofire. Now you
+  can select up to 4 buttons for player-1 and player-2 as autofire, and
+  configure the repeat frequency by button.
+
+- Added support for Konami Justifier gun using the mouse for games such as Die
+  hard Trilogy, Area 51, Lethal Enforcers, Crypt Killer, Project - Horned Owl,
+  Lethal enforces I & II.
+
+- External Input plugins support. This version supports external input plugins
+  such as Pokopom. You can select a plugin for the Port 1 and Port 2, but it is
+  recommended that if you want use both an external plugin and the internal
+  plugin you select the external plugin in the first port. Thanks to Shalma.
+
+- Added game profile by game. In this version it is possible during the gameplay
+  to save your preferences for the current game. The next time that you run the
+  same game it will use those preferences. All internal settings in every
+  plugin included with the emulator are supported (spucore, gpucore and Pete
+  Opengl2 GPU Core).
+
+- Improved auto-PPF support. Now the PPFv3 version is supported, and it is
+  possible to auto-load up to 8 PPFs per game. The filenames used must be
+  "(PS-EXE-ID)-00", "(PS-EXE-ID)-01". Ex: SLPS_013.00-00, SLPS_013.00-01.
+
+- Improved cheat support. Fixed cheatcodes gameshark conditional, added
+  increment/decrement types (0x10-11, 0x20-21) and copy type (0xc2).
+
+- Improved HLE bios emulation. Starting with version 1.9.25, the HLE bios has
+  been improved to support more games: Wild Arms, Jet Moto, Toca World Touring,
+  Simcity 2000. Memcards support was improved for a lot of games such as
+  Dinocrisis 2, Metal Gear Solid, V-Rally2, Diablo, Ridge Racer Type 4, Driver,
+  Echo Night and Azure Dreamns.
+
+- Fixes to the CD-ROM decoder and the core which made around to 40 more games
+  playable or better working.
+     - AGILE WARRIOR F-111X 
+     - ARCADE'S GREATEST HITS - THE ATARI COLLECTION 2
+     - BLASTO (PAL)
+     - C-12 - FINAL RESISTANCE
+     - CAPTAIN COMMANDO
+     - CINEMA EIKAIWA - AI NO HATE NI
+     - CINEMA EIKAIWA - ARASHIGAOKA
+     - CINEMA EIKAIWA - INTERCEPTOR
+     - CINEMA EIKAIWA - TENGOKU NI IKENAI PAPA
+     - CINEMA EIKAIWA - THIS BOYS LIFE
+     - CINEMA EIKAIWA - ZOMBIE
+     - DUKE NUKEM - LAND OF BABES (PAL)
+     - FANTASTIC NIGHT DREAMS - COTTON ORIGINAL
+     - FORMULA ONE 2000
+     - GLOCAL HEXCITE
+     - JUMPING FLASH 2
+     - LEGEND OF LEGAIA (Use Dualshock mode)
+     - LONDON RACER 2
+     - MARY-KATE AND ASHLEY - CRUSH COURSE (PAL)
+     - MARY KATE & ASHLEY - MAGICAL MYSTERY MALL (PAL)
+     - MEDIEVIL
+     - MEDIEVIL 2
+     - METAL SLUG - SUPER VEHICLE 001
+     - MABOROSHI TSUKIYO
+     - MILLENNIUM SOLDIER EXPENDABLE
+     - NIGHTMARE CREATURES II
+     - NISHIJIN PACHINKO TENGOKU VOL.2
+     - PERFECT WEAPON
+     - PSYBADEK
+     - ROCK'N ROLL RACING 2 - RED ASPHALT (PAL)
+     - RUGRATS STUDIO TOUR (PAL)
+     - SD GUNDAM G GENERATION ZERO
+     - SIDEWINDER II
+     - SLOTS
+     - SOUL BLADE
+     - STAR WARS - REBEL ASSAULT II - THE HIDDEN EMPIRE
+     - SUPER PANG COLLECTION
+     - THE HIVE
+     - USA RACER - A2 RACER GOES USA
+     - VIRTUA PACHI-SLOT OLYMPIA SPECIAL
+
+
+ePSXe v1.9.25, released on 27.01.2015
+
+- Added HLE bios support (an official PS1 is recommend yet). From this
+  version ePSXe can run ps1 games without an official PS1 bios, it includes
+  HLE bios emulation. Support is limited, but it is good enought to run a
+  very high number of games.
+  VERY IMPORTANT: Savestates done with a official PS1 bios are NOT compatible 
+  with savestates done with ePSXe HLE bios (Besides it uses a different namespace).
+
+- Fixed multi-bin format in Windows version (redump format). Now it supports
+  the games saved in multiple bins files + cue file directly.
+
+- Better SBI subchannel support (for example in Medievil) and fixed SBI in games 
+  with ECM format. Added SBI support in MDS/MDF format.
+
+- Added support to save memcards by game. Enabling this option it will
+  create 2 memcards by everygame in memcards/games/ folder, using the serial
+  of the game. In multidisc games, it will share the same memcards by all
+  of discs.
+
+- Fixes to the CD-ROM decoder and the core which made almost 20 more games
+  playable or working better like. For example this fixed
+  - Arcade Party Pak: Rampage now works
+  - Crash Bash: Pause menu now works
+  - Final Fantasy V
+  - Junclassic C.C. & Rope club
+  - Kamen Rider v3
+  - Minakatakudou Toujyou
+  - NHL Face Off 2001
+  - Nishijin Pachinko Tengoku Vol.3
+  - Omizu no  Hanamichi
+  - Sentient
+  - Simple 1500 Series Vol.006 - The Hanafuda [Rerelease]
+  - Standby Say You
+  - Tombi
+  - Tombi 2
+  - Twins Story - Kimi ni Tsutaetakute
+  - Vanark: Pause menu now works
+  - Worms Armageddon
+  - Yuukyuu no Eden - The Eternal Eden
+  - Yeh Yeh Tennis
+
+- New experimental dmachaincore that maybe can fix some graphic glitches in 
+  some games like Tomb Raider Chronicles or Metal Gear Solid. Usage execute 
+  epsxe.exe -dmachaincore. 
+
+- Note: for information about compatibility and games's configuration,
+  it is recommended that you visit the "Playstation Datacenter" at
+  http://psxdatacenter.com/. We want to thank Gladiator and Angel who 
+  have been a very important help in betatesting the new version.
+
+ePSXe v1.9.0, released on 26.07.2013
+
+- Added support for more types of Gameshark cheat codes. (D0-D3, E0-E3).
+
+- Added support for multi-bin iso format (redump format), and preliminary
+  support for ECM iso format.
+
+- The internal SPU plugin has been updated to the 1.9.0 version. It includes
+  fixes on interpolation (Square games) and other minnor fixes (Kururin Pa!).
+
+- Added support for joysticks with Circle analog Range. Choose "Full Circle"
+  on the kind of analog on configure gamepad screen. (Logitech and Xbox
+  gamepads).
+
+- Fixed analog full range to -128,127. (Ape Escape)
+
+- Fixes to the CD-ROM decoder and the core which made almost 30 more games
+  playable or working better like. For example this fixed TempestX3,
+  Duke Nukem Land of Babes, Rayman, Kiganjo,
+  Kids Station - Motto! Oja Maho Doremi Dokkan! Maho Dou Eigo Festival,
+  Firo & Klawd, Stahlfeder ...
+
+- Note: for information about compatibility and games's configuration,
+  it is recommended that you visit the "Playstation Datacenter" at
+  http://psxdatacenter.com/. We want to thank Gladiator who has
+  been a very important help in betatesting the new version.
+
+ePSXe v1.8.0, released on 09.11.2012
+
+- Added cheat codes support. Now ePSXe support Gameshark cheat codes. See
+  the Cheat Code section below to get information on how to use it.
+
+- Added support for disc images in PBP format. It supports compressed images, and
+  multi-disc images (a list of images is shown when you choose a multi-disc pbp).
+  This doesn't support encrypted files.
+
+- Added subchannel support using SBI files from redump.org. To get it working 
+  with isos the SBI file has to be renamed with the same filename as the image 
+  (except the extension, for example .bin to .sbi) and be located in the same folder.
+  To get it working in cdroms, you need to put the SBI file in directory patches,
+  with the PS-EXE name of the game and ".sbi" at the end of the name.
+  (example: SLES_99.999.SBI). Be carefull, ".sub" has priority over ".sbi",
+  so if you prefer to use the ".sbi" file, remove/move ".sub" to another folder.
+
+- Fixed changedisc feature, which was broken in 1.7.0, and added fixes to
+  support changedisc in more games that were not previously working.
+
+- The internal SPU plugin has been updated to the 1.8.0 version. This
+  version includes multiples fixes and add compatibility with a lot of
+  sound effects that were not properly supported before. Thanks goes to 
+  Shalma and Tikalat.  The following games work better in this release: 
+  Um Jammer Lammy, Final Fantasy VII, Final Fantasy Tactics, Xenogears, 
+  Vagrant Story, Misadventures of Tron Bonne, Spyro 2 & 3, Vib Ribbon, 
+  Discworld Noir, Tales of Destiny, Extreme Ghostbuster, 
+  South Park Chef's Luv Shack, Silhouette, Thousand Arms, Adidas Power Soccer ...
+
+- Added better support to change memcards on the fly (Dragon Warrior 7,
+  Star Ocean 2, Valkyrie Profile ...). This includes a
+  better detection by the games. You can also disable the memcards
+  in the configuration screen (needed in Lifeforce Tenka). Thanks goes to
+  Shalma and Tikalat.
+
+- Improved dual shock, mouse, guncon, multitap emulation (vibration on
+  multitap not supported). Mouse is working again in the Pad2 (Quake), 
+  and multitap is working in more games like Frogger 2, Rampage 2 and 
+  Crash Bash.  Thanks goes to Shalma and Tikalat.
+
+- Better support for CDDA in games, more games which had CDDA in the
+  previous version work now. It also adds better RepPlay, and
+  AutoPause support.
+
+- Some games with GPU status problems are detected and auto-activate the
+  required options in the GPU. These games don't work if you use PEC.
+  The list of affected games includes: To heart, Ishin No Arashi,
+  Dukes hazzard Racing for Home, Hot wheels: turbo racing, U.P.P.
+  Thanks goes to gladiator.
+
+- Added support for savestates in some game which didn't work in the previous
+  version because it was unable to find the game code name. It now generates 
+  a game code name for the game like SLU_XX.XXX.
+
+- Fixes to the CD-ROM decoder and the core which made almost 150 more games
+  playable or working better like. For example this fixed Shaman king, 
+  Arcade Pack (Rampage), Virtual Pool 3, Heart of Darkness, Eldergate,
+  Blue's Clues - Blue's Big Musical, Carnage Heart EZ,
+  Simple 1500 Series Vol 006 - The hanafuda, Roswell Conspirancies - Level 7,
+  Armored Core - Master of Arena, Digital Figure Iina, My Dream / On Air...
+
+- Note: for information about compatibility and games's configuration,
+  it is recommended that you visit the "Playstation Datacenter" at
+  http://psxdatacenter.com/. We want to thank Gladiator who has
+  been a very important help in betatesting the new version.
+
+ePSXe v1.7.0, released on 24.05.2008
+
+- Multiple changes has been done in the Pad support. This version supports
+  the Axis LRX, axis with +/-/full ranges, and a important bug in vibration
+  support has been fixed avoiding crashes. In the sio emulation section,
+  this version includes better DualShock protocol support, including
+  vibration in more games, and adding 2 new pad types, "DualAnalog" and
+  "Negcon". Finally thanks to the new Pete's gpu plugins, a new type of
+  "visual vibration" has been included, shaking the image when the
+  game triggers a vibration effect. (Note: if you are using epsxe 1.6.0
+  or older, it could be necessary to reconfigure the pad plugin in this
+  new version).
+
+- The internal SPU plugin has been updated to the 1.7.0 version. This
+  version includes new effects like better envelope, noise, interpolation,
+  frequency modulation, reverb and better synchronization between the core
+  and the sound. Thanks to this last fix, the following games work better now:
+  Metal Gear Solid, Valkyrie Profile, Eithea. Besides the spu API now
+  includes support for CDDA playing, getting better CDDA sound and core
+  synchronization, and compatibility with Vib Ribbon.
+
+- In this new version, the iso support code has been rewritten. Now it supports
+  the formats BIN/CUE, BIN/CCD and MDS/MDF (and minor fixes to ISO/NRG
+  support). Besides, due to the changes in the internal spu plugin, now
+  the CDDA sound is supported even when you run a iso game.
+  Advice!!!: The files BIN/CUE, BIN/CCD must have the same name and
+  different extension or the games will not be loaded
+
+- The MDEC decoder has been rewritten in the new version to get
+  new games playable suach as Area 51, Novastorm, Eggs of Steel 
+  and Maximum Force. It also fixes other minor bugs in other games 
+  like Rayman and Metal Gear Solid SM.
+
+- In 1.7.0, thanks to Pete's help and his gpu plugins, the framelimit 
+  management has been changed. Now the framelimit is always
+  enabled on startup and it can be toggled on/off with the F4 key.
+  It is recommended that you update your GPU plugins to the
+  version that will be released around the epsxe release date.
+
+- In this new version, a new version of the Pete's Software Plugin is
+  included in the plugins directory with the name "gpu.data. With the
+  F7 key it is possible change on the fly between the selected gpu
+  plugin and that gpu soft plugin. The software plugin "gpu.dat" can
+  be configured in the GPU plugin configuration screen with the 3
+  bottom buttons.
+
+- The XA/CDDA support has been worked in this new version, fixing sound
+  problems in the following games: Gamera 2000, The Putter Golf, Silverload,
+  The Firemen 2 Pete & Danny, Iron & Blood - Warriors of Ravenloft,
+  Chronicles of the Sword.
+
+- Fixes to the CD-ROM decoder and the core, which made at least 50 more games
+  playable like, for example, Brigandine, Need for Speed 1, Harry Potter I&II, 
+  Danger Girl, Wacky Races, Kidou Keisatsu Patlabor, Shadow Madness,
+  London Seirei Tantei-Dan, Monsters SA, Equestrian Showcase, Black Down,
+  Paca Paca Passion 1/2/special, This is football 2, Formula 1 EA 2000,
+  Winnie the Pooh, Formula one 99/2000/2001/arcade, Gegere No Kitarou,
+  Konohana - True Report, Yukyu Gensokyoku 3 - Perpetual Blue, 
+  Tama - Adventurous Ball In Giddy Labyrinth, Future Cop LAP, Virus 2000,
+  Spot goes to Hollywood, Pop'n music disney Tunes, Cosmic Race,
+  Super Gals Kotubiran, Koran Karon, WWF in your house, Tales of Fandom,
+  Transformers best of wars, Simple 1500 vol57 - the maze, Initial D,
+  Jounetsu Nekketsu Athletes, Rise of Robots 2: Resurrecion,
+  Tora Tora Tora, Victory Boxing Championship Edition, Final Fantasy 4,
+  Vampire Hunter D and otros.
+
+- Note: for information about compatibility and games's configuration,
+  it is recommended that you visit the "Playstation Datacenter" at
+  http://psxdata.snesorama.us/. We want to thank Gladiator who has
+  been a very important help in betatesting the new version.
+
+ePSXe v1.6.0, released on 05.08.2003
+
+- Fixed some cdrom emulation regressions, and more accurate cdrom emulation.
+  Gran Turismo 2, Dance Dance Revolution series, Gear Fighter Deboh, 
+  Hokuto no Ken, Gundam Battle Assault 2.
+
+- Changes to cdrom emulation what does that modchips games works. 
+  It includes Legend of Dragon US, Winning Eleven 2002, Um Jammer Lammy,
+  Omega Boost JAP, Wild Arms 2nd Ignition JAP, Saga Frontier 2 JAP,
+  Chocobo Racing JAP and possibly others.
+
+- Added support for autopause when playing CDDA sound. It should fix the
+  problems with music in games like Tomb Raider I.
+
+- Added support for report mode when playing CDDA sound. It fixes 
+  tekken 1 music and Lemmings 3D. (if you have problems with this change
+  it can be disabled with the commandline -disablereportmode).
+
+- Fixed some problems reading subchannel. (Harvest Moon)
+
+- Minnor changes to change disc function. (Arc the lad 3)
+
+- Now the memcards are autosaved on the fly. It should solve the
+  problem of lost your memcards if the emulator crashes on gameplay.
+  (Remember that it is a good idea, to backup your memcards sometimes)
+
+- Added gun emulation using a mouse. (Time Crisis 1, 2)
+
+- Now the mouse emulacion can be selected in the second gameport, anyway
+  only 1 mouse is supported yet, so if you do enable it, it will be
+  disabled in the first pad.
+
+- It is possible now select analog, digital and disabled mode in every gamepad. 
+  (Thanks to everybody who helped testing it :)
+
+- Included multitap support. In this version only 1 multitap is 
+  supported. If you select multitap, it will support 4 gamepads, what
+  will be connected to the first gameport of the psx. Multitap only
+  must be enabled in games what supports it, in the rest of the games
+  will not work the gamepads if multitap is enabled.
+
+- The keys F5 and F6 have in the new version a different function. F6 is
+  used for select a pad, and F5 will toggles digital/analog mode in the 
+  pad selected. (you need upgrade your gpu plugins to 1.73 or superior)
+
+- The dos window what shows the info messages, can be enabled/disabled from GUI.
+
+- Included support for CDI isos. (Discjuggler format)
+
+- Fixes to the CD-ROM decoder and the core, which made some more games
+  playable like, for example, Spyro 2 PAL, Spyro 3 PAL, Front Mission 3,
+  Batman Gothan City Racer, Duke Nukem: Land of babes, Ridge Racer JAP,
+  Nekketsu Oyako, Bust a Grove 2 JAP ...
+
+ePSXe v1.5.2, released on xx.05.2002
+
+- Fixed a bug which got into 1.5.2 regarding several gte flags 
+  (Porsche Challenge, Tomb Raider).
+
+- Partially rewrote the CD-ROM decoder, now it doesn't need custom flags 
+  in order to run various games any more.
+
+- Moved the subchannel read options to it's own window in the CD-ROM 
+  configuration. Also added a new subchannel reading mode, which works 
+  with various LG 852x cdrom drives.
+
+- Fixed a bug in the internal SPU plugin, which has been there since v1.5.0! 
+  It caused sound effects to repeat and several games to freeze 
+  (BOF series, Soul Blade).
+
+- Added support for the Nero ISO format (.nrg).
+
+- Massive changes to the SIO emulation. It should have better timing now and 
+  the F4 trick shouldn't be necessary that often any more. "SIO irq always on" 
+  has been removed from the GUI, but you can still turn it on using the F4 
+  key. (affects Silent Hill esp, Track & Field, Metalslugx, NFS5 PAL, Rapshody ...)
+
+- Fixed a bug in the internal ISO reading routines, which prevented some of the 
+  last sectors to be accessed.
+
+- As the Chrono Cross trick isn't necessary any more, we have assigned a new 
+  trick to the F7 key, for the Xenogears dreams sequence: Press this key at 
+  the beginning of the scene, and once again after the end ;)
+
+- Fixes to the CD-ROM decoder and the core, which made some more games 
+  playable like, for example, Theards of Fate, NBA Basketball 2000, 
+  Legend of Mana, Rebelt Assault 2, Tekken 2, MegamanX series, 
+  Jackie Chan US, Michelin Rally Masters, Transformers Beast of Wars ...
+
+ePSXe v1.5.1, released on xx.03.2002
+
+- Included partial support for libcrypt games. Libcrypt is a protection
+  scheme used very often in PAL games. It uses data in subchannel Q.
+  In order to play your original cd games in ePSXe you need a cdrom reader
+  which works with the read-subchannel routines in ePSXe. NOT every cdrom
+  reader with support for read subchannels will work in epsxe. If your cdrom
+  reader is able to read subchannels but it is not supported by ePSXe,
+  you can use clonecd to read the subchannel to a .SUB file, and copy it
+  in the epsxe\patches directory with the same name than cdrom PS-EXE
+  and with the extension .SUB (SLESXXX.XX.SUB/SCESXXX.XX.SUB/SLUSXXX.XX.SUB..)
+  Since reading from subchannel is slow, ePSXe includes an option in the
+  cdrom config window that you can enable to cache the subchannel to disk
+  the first time you run a game. Of course you can always use some external
+  cdrom plugins, currently only Pete's cdrom plugin supports it.
+  (The support is partial because NO every libcrypt game is working :(,
+  the no working games includes (at least) Spyro 2 and 3 PAL, and
+  formula one 99) 
+ 
+  In resumen:
+
+  1) If you want subchannel support only from files, select in the cdrom config 
+     window "Enable subchannel support".
+
+  2) If you want subchannel support from cdrom, select in the cdrom config window
+     "Enable subchannel support" and 
+     "Enable subchannel read from cdrom."
+     If your cdrom is able to read subchannels in epsxe, a message will be
+     shown in the console between the rest of init messages.
+
+  3) If you want to caching to disk the subchannel the first time what you
+     run a game, select in the cdrom config window:
+     "Enable subchannel support", 
+     "Enable subchannel read from cdrom." and
+     "Enable subchannel caching to disk."
+
+  4) If you have problems reading the cdroms after of select
+     "Enable subchannel read from cdrom." probably your cdrom is not compatible
+     with ePSXe subchannel read routines, disable this option, and make your
+     own .sub files with CloneCD.
+
+- Added support for Teac cdrom readers to internal cdrom plugins.
+  (Thanks to Pete)
+
+- Added support for pov hat joysticks.
+  (Thanks to Roberto Paredes by multiples tests)
+
+- Some CD stuff got fixed, like the problem with changing discs, the 
+  internal win2k CD plugin CDDA problems and a bug with the ppf support of 
+  the internal plugins.
+
+- Fixes to the GTE, which solve problems with 102 Dalmatinas, Rugrats in
+  paris, Destruction Derby 2, Nuclear Strike and possibly others.
+
+- Changed some internal timing stuff, which should produce better (faster)
+  background sound in several games (FF7, Threads of Fate, Valkyrie Profile)
+  (You can use the old timing with -oldtiming)
+
+- Removed the auto detection of game and required BIOS, as this prevented
+  Legend of the dragoon US and Wild Arms 2 US from working.
+
+- Removed the two options -cdinc and -nocdinc, as fixes made them 
+  unncessary. In this version -noxaread has not some effect.
+
+- Added support for MDEC transparency, for the Oddworld series, dw4/dw7 
+  battle effects. 
+
+- Added support for Capcom MDECs, but you need to use the command line
+  -adjustiming, what will give serious problems with gamepad keys and
+  memory cards (use F4 to fix this problems), and hard slowdowns.
+  (Use this option in your own risk, we recommend to use it only when
+  it will be really necessary).
+
+- Included a new commandline, it is called -nocdoverwrite. It could fix
+  problems with some games like Parappa the Rapper's demo. Sometimes
+  it does the same than -cdtiming.
+
+- LINUX version only: added partial support for external gamepad plugins.
+  Actually only works the lamer0's plugin, what is combined with the
+  internal pad plugin.
+
+- Fixes to CPU and CD-ROM make games like Star Wars - The phantom Menace,
+  Resident Evil 1 PAL, Legend of Legaia, Star Ocean 2, Gran Turismo JAP and
+  Philisoma playable.
+
+ePSXe v1.5.0, released on xx.01.2002
+
+- Fixed a bug in MDECs, which caused Metal Gear Solid and Rayman 1 to 
+  crash. Furthermore, the MDEC options aren't read from the windows 
+  registry any more, so you can only disable them with command lines 
+  from now on.
+
+- Rewritten the code what loaded the ps-exe files when starting a game, for 
+  a better detection of the games name and the region.
+
+- Added native support for ppf files. Now you don't need to patch the games 
+  any more, simply copy your ppf file into the directory "/patches", with 
+  the same name than the main PS-exe file in the cdrom (SLES*,SCES*,
+  SLUS* ...), in uppercase. ePSXe will load it on startup then and patch 
+  the game in memory on the fly !
+
+- MCI code is now disabled in WinNT/2k/XP, expect when you are using an 
+  external CD-ROM plugin which has its own CDDA functions (e.g. Pete's). 
+  Furthermore, the external CD-ROM plugins can now play some games like 
+  Tomb Raider I and II PAL, what was not possible before due to a bug 
+  in 1.4.0.
+
+- Fixed a bug in the internal CD-ROM plugins, which caused some games to 
+  hang when they played CDDA sound and later accessed a data 
+  sector (Rayman 1)
+
+- Fixed some bugs in savestates. New savestate are not compatibles with old 
+  epsxe versions, but the savestates from a savestate from an old version 
+  can still be loaded. The command line -ssv0 has been added, which 
+  will let ePSXe save the savestates into the old (but buggy) format. 
+  (Fixed savestates in square mdecs, and in threads of fate)
+
+- Some games which ran only with a certain bios version, should now run 
+  with any (only checked with Legend of Dragon PAL)
+
+- Fixed some GTE bugs. (Looney Tunes: Perro y Lobo, Nhl 99)
+
+- Included a file with help, what can be accessed from help->contents.
+  (Thanks to Bobbi)
+
+- Last hour changes in internal spu, what fixes Metal gear solid and
+  Valkyrie profile sound, but we have not had too time for test it ;)
+
+- Added a new workaround in order to run Parasite Eve 2 (thanks to 
+  Psychojak!). You need to use the command "-pe2". Some PE2 versions are 
+  automaticly detected and don't need it though. We didn't play through 
+  the complete game though, we can't tell if it's playable until the end.
+
+- Fixes to the CD-ROM decoder and the core, which make some more games 
+  playable like for example Valkyrie profile, Syphon filter series speech, 
+  Rayman 1, Micromachines V3, Croc 2, Duke Nukem: Land of Babes, Vrally 2 
+  and Nfs 5 menus, Time Crisis 2 music, Casper Around the World ...
+
+- Multiples games can be played using additional commands like: 
+  Rebelt Assault 2 (-noignorecmd), Micromaniacs (-cdtiming), 
+  Front Mission 3 (-nocdinc) ...
+
+ePSXe v1.4.0, released on  xx.06.2001
+
+- Included a new wizard guided config, what should do easier
+  configure the emulator.
+
+- Fixed a bug in the internal sound plugin which caused
+  crash on systems using directx8+geforce and some soundcards.
+
+- Fixed a division by zero bug in the gte routines that started
+  in version 1.2.0. It solves the problems with Xenogears,
+  Metal Gear Solid and Final Fantasy 7.
+
+- Added the extension .img (clonecd) to the load iso function.
+
+- Fixed a bug detecting the name of some games, it is used
+  to detect the format (pal/ntsc). (Metal Gear Solid Pal)
+
+- Fixed a bug in the function CDROpen. Fix the psemupro iso plugin.
+
+- Added support to the cdplayer included in the playstation
+  bios, you can listen to your cdda with epsxe now :)
+
+- Fixed some problems with the bootstrap of the playstation.
+  -nogui should not be needed anymore. (Destruction Derby Raw pal,
+  Breath of fire 3)
+
+- Fixed some gte problems. (Vandal hearts 2 pal, Wipeout series)
+
+- Fixed a mdec decoder bug. (Xfiles)
+
+- Added preliminary support for netplay plugins. (Cyberpad)
+
+- Now it is possible to change the memcards file in any moment of the
+  game. (Of course you shouldn't change the memcard while the
+  game is writing it, like in a psx ;-)
+
+- Fixed some problems with the change disc function. (Metal Gear Solid)
+
+- Included support for a new feature included in the video plugins,
+  it now shows a mini-picture from the savestates when you use the
+  F2 key to increase the selected save slot. (It works only with
+  savestates done with the version 1.4.0 or superior)
+
+- Fixed some problems with the XA sound effects and background
+  XA sound which fix Silent Bomber, Megaman X5, Castlevania SOTN,
+  Bloody Roar 1, Dinocrisis 2, and more.
+
+- Fixes to the CD-ROM decoder and the core, which make some more games
+  playable like for example Incredible Crisis, Simpsons Wresting,
+  Threads of fate, Tomb Raider I and II (pal),
+  Fighting Force 2 and so on ;)
+
+ePSXe v1.2.0, released on 07.03.2001
+
+- Added better analogic pad emulation and force feedback.
+  It is now possible to configure the analogic axis and
+  the effect of the force feedback motors. (Many thanks
+  to Alex7 and to www.burutter.com, for donating a very nice
+  psx to usb pad converter and giving help on adding support
+  for it).
+
+- Now ePSXe includes savestates support. F1 = save state,
+  F2 = increase slot (max = 5), F3 = load state. The
+  savestates are compressed and saved to the sstates directory,
+  with an average size of 1.5Mb.
+  (WARNING!!! In release date it is supported only in the
+  following plugins: Lewpy Gpu, Pete Gpu, Pete Spu and ePSXe Spu,
+  support will be included in more plugins soon
+  by the plugins authors)
+
+- Partially re-writen the internal spu, it should be
+  faster, have less sound glitches and better sound quality.
+
+- Optimizations added in gte, mdec and core which makes
+  some games work some fps faster than before.
+
+- Fixes to the CD-ROM decoder and the core, which make some more games
+  playable like for example Gran Turismo, Resident Evil, Ape Escape,
+  Kingley Adventure, Legend of Legaia (use the "-legaia" command line),
+  Final Fantasy IX PAL and so on ;-)
+
+ePSXe v1.0.1, released on xx.xx.2000
+
+- A completly re-written MDEC engine, which should give you better quality
+  and some more FPS during video playback.
+- More accurate timing, what means that videos should pause less. (MDEC
+  timing should always be turned ON now)
+- Included two new internal CD-ROM plugins : One for WinNT/Win2k users,
+  which uses WinNT/Win2k's native functions, and an ASPI CD-ROM plugin
+  for Win9x and Win2k users, which is usually faster than the older plugins.
+- Fixes to XA sound playback in the internal SPU plugin.
+- Included NTSC/PAL auto detection for a more accurate timing, mainly
+  in Square videos.
+- The ISOs are loaded directly now, without showing the BIOS logo. 
+- Added support for PSX mouse emulation. (Selectable in Config -> Controller)(*)
+- Added support for PSX analog pad emulation using Analog Pads or mouse.
+  (selectable in Config- > Controller)(*)
+- It's now possible to disable the pads; this is necessary for some games which
+  are only playable for 1 player. (qbert)
+- Included a new memory card selector, which comes with support for the most
+  important memory card formats (.MCR, .MEM, .MCD, .GME)
+- Memory cards are saved now when you go to the main window and when you exit
+  the emu incorrectly. It's still highly recommended though to close down the
+  emu using the File -> Exit option ;-)
+- Added an experimental "Change discs" option. To switch a disc, you need to
+  go to File -> Change disc. (this isn't working with some games yet though)
+- ePSXe should work better with Lewpy's plugins now, so no more crashes when
+  you exit the emu. The reset/continue functions should also work now on several
+  videoboards.
+- Fixes to the CD-ROM decoder and the core, which make some more games playable
+  like for example Final Fantasy 9, Grandia, Fear Effect, Tenchu 2 and so on ;-)
+- Added a snapshot maker in key F8. (you need the "snap" directory).
+- Since we haven't been able to fix the Chrono Cross bug yet, we added a workaround,
+  which can be activated using the F3 key while the game freezes at that point 
+  (though this doesn't fix the status screen problem yet, you must still use the
+  cheat code for this)
+
+
+(*) We have created a system, where you can either use one digital pad and one
+mouse or one analog pad. You can change between those using the F5 key.
+We contacted the GPU plugin authors, so in the next version of their plugins, there 
+should be a flag displaying the type of pad you have currently selected.
+
+
+*****************************************************************************
+C. Thanks
+*****************************************************************************
+
+ Doomed        - A nice docs and love to emulation ;-)
+ Pts           - Testing and moral support
+ Vood          - Xplorer supporter
+ Fennec        - A nice xplorer debugger
+ Kazzuya       - For xa support and nice plugins
+ Pete          - Some wonderfull plugins and emails
+ Roor          - A bunch of good ideas
+ Expert        - Some nice chats and info
+ duddie/tratax - PSemu Pro crew
+ JNS           - Gui help and multiple tests.
+ Bobbi         - Fixes to docs, beta testing and gui.
+ Gladiator     - For his great work testing the emulator.
+ GreenImp      - Testing multiples games.
+ CDBuRnOuT     - Testing features.
+ Wormie        - Testing.
+ i4get         - Testing.
+ Lewpy         - Help with some gpu issues.
+ Null2         - Help with spu adsr.
+ Alex7/Burutter- Help adding dualshock support.
+ sxamiga       - Help testing the emulator
+ psychojak     - Help with Parasite Eve 2
+ iori          - Help with timing.
+ shalma        - Help with issues
+ tikalat       - Help with issues.
+ andy          - Testing multiples games.
+ fpse team     - Ideas and help with MDEC, SIO, and Peopsxgl contribution.
+ 1964 team     - UI ideas
+ Zenju         - xBRZ code.
+ Domus         - Testing and italian translation
+ the_randomizer- Testing
+ Lottes        - Shaders
+ Hyllian       - Shaders
+ Edbla         - GPU improving
+ Nekukabu      - Japanese Translation
+ Martin Korth  - PSX documentation
+ Xebra author  - PSX documentation
+ KrossX        - Input plugins
+ Tapcio        - GPU improving
+ Robert Typek  - ePSXe Art.
+ Mednafen author's - Great source of info
+
+ Independent JPEG Group's for routines to decode jpeg.
+ Segu, Nik the and rest of the PSEmu Pro plugins programmers.
+
+ More thanks to: zsknight, Zilmar, Jabo, Willy, Goi, Jose and David Muriel.
+
+**************************************************************************
+D. Legal Stuff
+**************************************************************************
+
+EPSXE Copyright 2000/2016 calb, Galtor and _demo_
+Sony Playstation is registered trademark of Sony.
+GPU - Pete OpenGL2 GPU core is Pete Bernet's copyright.
+xBRZ support is Zenju's copyright.
+Shaders are Lottes and Hyllian's copyright.
+All mentioned games are registered trademarks of their authors or marks.
+You may only be in possession of the copyrighted BIOS if you're legally
+entitled to do so.Neither the ePSXe Team software nor its authors are
+affiliated with Sony. ePSXe is freeware and can be distributed freely as
+long as it is not modified or sold and the BIOS isn't packaged with the
+program. This readme must be included with the executable.
+
+When you use this software you do that at your own risk. The authors are
+not responsible for any loss or damage resulting from the use or misuse
+of this software. If you do not agree with these terms delete this
+software immediately !
+
+-------------------------------------------------------------------
+epsxepc@gmail.com
+twitter: @epsxeteam
+-------------------------------------------------------------------
+http://www.epsxe.com
+-------------------------------------------------------------------

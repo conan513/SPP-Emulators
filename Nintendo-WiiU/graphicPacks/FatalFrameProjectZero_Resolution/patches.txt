@@ -1,0 +1,41 @@
+[USAFatalFrameV0]
+moduleMatches = 0xE93B31F6; Vanilla Patch
+
+codeCaveSize = 0x4
+
+_pointSpriteSize = 0x00000000
+0x00000000 = .int $width
+
+0x026D0674 = lis r12, _pointSpriteSize@ha
+0x026D067C = lwz r5, _pointSpriteSize@l(r12)
+0x026D0680 = lwz r6, _pointSpriteSize@l(r12)
+
+
+[EuropeProjectZeroV0]
+moduleMatches = 0xB54DBEB0; Vanilla Patch
+moduleMatches = 0x5A9D6D31; Uncensored Patch 1
+moduleMatches = 0x360FA109; Uncensored Patch 2
+moduleMatches = 0x9D96F19B; Uncensored Patch 3
+moduleMatches = 0x81551809; Uncensored Patch 4
+
+codeCaveSize = 0x4
+
+_pointSpriteSize = 0x00000000
+0x00000000 = .int $width
+
+0x026CF508 = lis r12, _pointSpriteSize@ha
+0x026CF510 = lwz r5, _pointSpriteSize@l(r12)
+0x026CF514 = lwz r6, _pointSpriteSize@l(r12)
+
+[JapanZeroV0]
+moduleMatches = 0xA86AA5B2; Vanilla Patch
+moduleMatches = 0x52992DCD; ? Patch
+
+codeCaveSize = 0x4
+
+_pointSpriteSize = 0x00000000
+0x00000000 = .int $width
+
+0x02BDFCAC = lis r12, _pointSpriteSize@ha
+0x02BDFCB4 = lwz r5, _pointSpriteSize@l(r12)
+0x02BDFCB8 = lwz r6, _pointSpriteSize@l(r12)
