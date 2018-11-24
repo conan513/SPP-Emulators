@@ -1,5 +1,0 @@
-[09:39:43] ------- Init Cemu 1.14.0c -------
-[09:39:43] mlc01 path: E:\Source\SPP-Emulators\Nintendo-WiiU\mlc01\
-[09:39:43] CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
-[09:39:43] RAM: 16343MB
-[09:39:43] Used CPU extensions: SSSE3, SSE4.1, AVX2, AES-NI
