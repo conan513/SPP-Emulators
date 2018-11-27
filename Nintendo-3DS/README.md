@@ -2,14 +2,14 @@
 
 Scroll down for the original README.md!
 
-Base revision: 4e255a40fc69575fdd00c0972ecf59fc7bd910d1
+Base revision: 2678c1a945c00dfa506e818dae368a9c7d873275
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
 |[4442](https://github.com/citra-emu/citra/pull/4442)|[a854b23](https://github.com/citra-emu/citra/pull/4442/files/)|Memory: decouple from Kernel|[wwylele](https://github.com/wwylele)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4279](https://github.com/citra-emu/citra/pull/4279)|[deaed38](https://github.com/citra-emu/citra/pull/4279/files/)|applets: stub mii selector to always return a standard mii|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
+|[4279](https://github.com/citra-emu/citra/pull/4279)|[fe99e5a](https://github.com/citra-emu/citra/pull/4279/files/)|applets: stub mii selector to always return a standard mii|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 |[4164](https://github.com/citra-emu/citra/pull/4164)|[a21f2da](https://github.com/citra-emu/citra/pull/4164/files/)|citra_qt, video_core: Screenshot functionality|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
 
 
