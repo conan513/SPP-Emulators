@@ -2,14 +2,13 @@
 
 Scroll down for the original README.md!
 
-Base revision: 2678c1a945c00dfa506e818dae368a9c7d873275
+Base revision: 7e90abec78fafbbdc9370f28435b297af7fe7074
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4442](https://github.com/citra-emu/citra/pull/4442)|[a854b23](https://github.com/citra-emu/citra/pull/4442/files/)|Memory: decouple from Kernel|[wwylele](https://github.com/wwylele)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4279](https://github.com/citra-emu/citra/pull/4279)|[fe99e5a](https://github.com/citra-emu/citra/pull/4279/files/)|applets: stub mii selector to always return a standard mii|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
+|[4279](https://github.com/citra-emu/citra/pull/4279)|[48239be](https://github.com/citra-emu/citra/pull/4279/files/)|applets: stub mii selector to always return a standard mii|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 |[4164](https://github.com/citra-emu/citra/pull/4164)|[a21f2da](https://github.com/citra-emu/citra/pull/4164/files/)|citra_qt, video_core: Screenshot functionality|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
 
 
@@ -23,6 +22,7 @@ Citra
 ==============
 [![Travis CI Build Status](https://travis-ci.org/citra-emu/citra.svg?branch=master)](https://travis-ci.org/citra-emu/citra)
 [![AppVeyor CI Build Status](https://ci.appveyor.com/api/projects/status/sdf1o4kh3g1e68m9?svg=true)](https://ci.appveyor.com/project/bunnei/citra)
+[![Bitrise CI Build Status](https://app.bitrise.io/app/4ccd8e5720f0d13b/status.svg?token=H32TmbCwxb3OQ-M66KbAyw&branch=master)](https://app.bitrise.io/app/4ccd8e5720f0d13b)
 
 Citra is an experimental open-source Nintendo 3DS emulator/debugger written in C++. It is written with portability in mind, with builds actively maintained for Windows, Linux and macOS.
 
