@@ -2,13 +2,13 @@
 
 Scroll down for the original README.md!
 
-Base revision: 4b950728fd0a8ca1d970ed697421d77d84296e82
+Base revision: e88cdcc912ae6929f9008c1b307c62f1e7b0637f
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[1](https://github.com/yuzu-emu/yuzu-canary/pull/1)|[a8dfe54](https://github.com/yuzu-emu/yuzu-canary/pull/1/files/)|Canary Base|[chris062689](https://github.com/chris062689)|Yes|
 |[1827](https://github.com/yuzu-emu/yuzu/pull/1827)|[2908d30](https://github.com/yuzu-emu/yuzu/pull/1827/files/)|gl_rasterizer: Enable clip distances when set in register and in shader|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
-|[1826](https://github.com/yuzu-emu/yuzu/pull/1826)|[b7bb5fc](https://github.com/yuzu-emu/yuzu/pull/1826/files/)|[WIP] Rewrited TEX/TEXS (TEX Scalar).|[marcosvitali](https://github.com/marcosvitali)|Yes|
+|[1826](https://github.com/yuzu-emu/yuzu/pull/1826)|[aed0cab](https://github.com/yuzu-emu/yuzu/pull/1826/files/)|Rewrited TEX/TEXS (TEX Scalar).|[marcosvitali](https://github.com/marcosvitali)|Yes|
 |[1825](https://github.com/yuzu-emu/yuzu/pull/1825)|[e8620ea](https://github.com/yuzu-emu/yuzu/pull/1825/files/)|gl_shader_manager: Update pipeline when programs have changed|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
 |[1824](https://github.com/yuzu-emu/yuzu/pull/1824)|[1a2bb59](https://github.com/yuzu-emu/yuzu/pull/1824/files/)|gl_rasterizer: Implement a framebuffer cache|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
 |[1823](https://github.com/yuzu-emu/yuzu/pull/1823)|[0f43564](https://github.com/yuzu-emu/yuzu/pull/1823/files/)| gl_rasterizer_cache: Fix several surface copy issues.|[bunnei](https://github.com/bunnei)|Yes|
