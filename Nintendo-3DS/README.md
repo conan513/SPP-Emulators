@@ -2,7 +2,7 @@
 
 Scroll down for the original README.md!
 
-Base revision: 9c904e475bbffdd11802334ffda5acaa151f6d38
+Base revision: 11bc9028bb92b1947ae7f83006255b34dcb532e7
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
@@ -10,8 +10,6 @@ Base revision: 9c904e475bbffdd11802334ffda5acaa151f6d38
 |[4476](https://github.com/citra-emu/citra/pull/4476)|[630e3d6](https://github.com/citra-emu/citra/pull/4476/files/)| web_service: move telemetry condition from TelemetrySession constructor to destructor|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[bcbafb9](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4279](https://github.com/citra-emu/citra/pull/4279)|[48239be](https://github.com/citra-emu/citra/pull/4279/files/)|applets: stub mii selector to always return a standard mii|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4164](https://github.com/citra-emu/citra/pull/4164)|[5a3eb22](https://github.com/citra-emu/citra/pull/4164/files/)|citra_qt, video_core: Screenshot functionality|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
 
 
 End of merge log. You can find the original README.md below the break.
