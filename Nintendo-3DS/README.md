@@ -7,6 +7,7 @@ Base revision: 11bc9028bb92b1947ae7f83006255b34dcb532e7
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
+|[4483](https://github.com/citra-emu/citra/pull/4483)|[3aff585](https://github.com/citra-emu/citra/pull/4483/files/)|DSP: Add address mask for physical pointers to audio data buffers|[RoadrunnerWMC](https://github.com/RoadrunnerWMC)|Yes|
 |[4476](https://github.com/citra-emu/citra/pull/4476)|[630e3d6](https://github.com/citra-emu/citra/pull/4476/files/)| web_service: move telemetry condition from TelemetrySession constructor to destructor|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[bcbafb9](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
