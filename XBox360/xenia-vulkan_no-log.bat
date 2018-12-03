@@ -1,0 +1,1 @@
+start %CD%\xenia-vulkan.exe --log_file=stdout
