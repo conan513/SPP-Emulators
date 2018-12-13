@@ -38,6 +38,13 @@ $gameHeight = 720
 // Common HD Resolutions
 
 [Preset]
+name = 1600x900
+$width = 1600
+$height = 900
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
 name = 1920x1080
 $width = 1920
 $height = 1080
@@ -185,30 +192,14 @@ overwriteHeight = ($height / $gameHeight) * 720
 [TextureRedefine]
 width = 640
 height = 368
-formats = 0x19,0x80e
-overwriteWidth = ($width / $gameWidth) * 640
-overwriteHeight = ($height / $gameHeight) * 368
-
-[TextureRedefine]
-width = 640
-height = 368
-formats = 0x816
-overwriteFormat = 0x823
+formats = 0x1,0x19,0x80e,0x816
 overwriteWidth = ($width / $gameWidth) * 640
 overwriteHeight = ($height / $gameHeight) * 368
 
 [TextureRedefine]
 width = 640
 height = 360
-formats = 0x19
-overwriteWidth = ($width / $gameWidth) * 640
-overwriteHeight = ($height / $gameHeight) * 360
-
-[TextureRedefine]
-width = 640
-height = 360
-formats = 0x816
-overwriteFormat = 0x823
+formats = 0x1,0x19,0x816
 overwriteWidth = ($width / $gameWidth) * 640
 overwriteHeight = ($height / $gameHeight) * 360
 

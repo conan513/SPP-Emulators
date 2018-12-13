@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 000500001019C800,000500001019E600,000500001019E500
 name = Distant Fog
-path = "The Legend of Zelda: Twilight Princess HD/Modifications/Distant Fog"
+path = "The Legend of Zelda: Twilight Princess HD/Mods/Distant Fog"
 description = Sets the depth and exposure of distant fog.
 version = 3
 
