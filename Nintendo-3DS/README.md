@@ -2,17 +2,18 @@
 
 Scroll down for the original README.md!
 
-Base revision: d2003dae4a364ca5407dade065893ad19aeabf11
+Base revision: 29548bbe86fd8e29316ba5321f1c32b60cbb669d
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
+|[4508](https://github.com/citra-emu/citra/pull/4508)|[4e41399](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
 |[4500](https://github.com/citra-emu/citra/pull/4500)|[9293760](https://github.com/citra-emu/citra/pull/4500/files/)|Memory: sync rasterizer cache mark to fix LLE applet crash|[wwylele](https://github.com/wwylele)|Yes|
 |[4496](https://github.com/citra-emu/citra/pull/4496)|[07d6d90](https://github.com/citra-emu/citra/pull/4496/files/)|gl_rasterizer_cache/MortonCopy: avoid read/write to invalid address|[wwylele](https://github.com/wwylele)|Yes|
-|[4490](https://github.com/citra-emu/citra/pull/4490)|[f6b08b3](https://github.com/citra-emu/citra/pull/4490/files/)|[WIP] audio: implement DSP LLE|[wwylele](https://github.com/wwylele)|Yes|
+|[4490](https://github.com/citra-emu/citra/pull/4490)|[5a74159](https://github.com/citra-emu/citra/pull/4490/files/)|[WIP] audio: implement DSP LLE|[wwylele](https://github.com/wwylele)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
 |[4457](https://github.com/citra-emu/citra/pull/4457)|[6d46b39](https://github.com/citra-emu/citra/pull/4457/files/)|citra_qt: Remove V-Sync option|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4437](https://github.com/citra-emu/citra/pull/4437)|[e4fd8fe](https://github.com/citra-emu/citra/pull/4437/files/)|citra-qt: Make hotkeys configurable via the GUI (Attempt 2)|[adityaruplaha](https://github.com/adityaruplaha)|Yes|
+|[4437](https://github.com/citra-emu/citra/pull/4437)|[f042210](https://github.com/citra-emu/citra/pull/4437/files/)|citra-qt: Make hotkeys configurable via the GUI (Attempt 2)|[adityaruplaha](https://github.com/adityaruplaha)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 
 
