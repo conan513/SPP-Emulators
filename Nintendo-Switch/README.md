@@ -2,19 +2,19 @@
 
 Scroll down for the original README.md!
 
-Base revision: 2c6679bb013af6c153e36b35606dddcc75f129dc
+Base revision: 95255899e7efd7967251cebc555e22fab0596a85
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[1](https://github.com/yuzu-emu/yuzu-canary/pull/1)|[a8dfe54](https://github.com/yuzu-emu/yuzu-canary/pull/1/files/)|Canary Base|[chris062689](https://github.com/chris062689)|Yes|
-|[1892](https://github.com/yuzu-emu/yuzu/pull/1892)|[ec58d01](https://github.com/yuzu-emu/yuzu/pull/1892/files/)|[WIP] Improve control flags implementation|[Tinob](https://github.com/Tinob)|Yes|
-|[1891](https://github.com/yuzu-emu/yuzu/pull/1891)|[5e632ca](https://github.com/yuzu-emu/yuzu/pull/1891/files/)|fsp_srv: Implement IStorage::GetSize|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
-|[1890](https://github.com/yuzu-emu/yuzu/pull/1890)|[190cbc0](https://github.com/yuzu-emu/yuzu/pull/1890/files/)|Fix Process object leak on emulation stop|[jschmer](https://github.com/jschmer)|Yes|
+|[1914](https://github.com/yuzu-emu/yuzu/pull/1914)|[dd27229](https://github.com/yuzu-emu/yuzu/pull/1914/files/)|service/am: Unstub GetAppletResourceUserId|[lioncash](https://github.com/lioncash)|Yes|
+|[1909](https://github.com/yuzu-emu/yuzu/pull/1909)|[a6daed7](https://github.com/yuzu-emu/yuzu/pull/1909/files/)|Fix arrayed texture LOD selection and depth comparison ordering|[heapo](https://github.com/heapo)|Yes|
+|[1904](https://github.com/yuzu-emu/yuzu/pull/1904)|[3702a67](https://github.com/yuzu-emu/yuzu/pull/1904/files/)|gl_rasterizer: Implement a more accurate fermi 2D copy.|[bunnei](https://github.com/bunnei)|Yes|
+|[1886](https://github.com/yuzu-emu/yuzu/pull/1886)|[87cb0d5](https://github.com/yuzu-emu/yuzu/pull/1886/files/)|Port citra-emu/citra#4164: "citra_qt, video_core: Screenshot functionality"|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 |[1878](https://github.com/yuzu-emu/yuzu/pull/1878)|[b1bac99](https://github.com/yuzu-emu/yuzu/pull/1878/files/)|Workaround for BOTW (and others?) deadlock on boot|[heapo](https://github.com/heapo)|Yes|
 |[1809](https://github.com/yuzu-emu/yuzu/pull/1809)|[6dea93d](https://github.com/yuzu-emu/yuzu/pull/1809/files/)|Eliminate G8R8 conversion, native is actualy R8G8|[FernandoS27](https://github.com/FernandoS27)|Yes|
 |[1781](https://github.com/yuzu-emu/yuzu/pull/1781)|[e11e65b](https://github.com/yuzu-emu/yuzu/pull/1781/files/)|am: Implement HLE profile selector applet|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
 |[1780](https://github.com/yuzu-emu/yuzu/pull/1780)|[c07059e](https://github.com/yuzu-emu/yuzu/pull/1780/files/)|configure_input: Add Controller Setup Profiles and simplify input UI|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
-|[1732](https://github.com/yuzu-emu/yuzu/pull/1732)|[e6f7825](https://github.com/yuzu-emu/yuzu/pull/1732/files/)|svc: Implement yield types 0 and -1|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
 |[1703](https://github.com/yuzu-emu/yuzu/pull/1703)|[09d8109](https://github.com/yuzu-emu/yuzu/pull/1703/files/)|[DO NOT MERGE] nvdrv: Stub nvdec/vic ioctls to bypass nvdec movies|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
 |[1603](https://github.com/yuzu-emu/yuzu/pull/1603)|[fd98bf1](https://github.com/yuzu-emu/yuzu/pull/1603/files/)|Preliminary implementation of LDG (continuation)|[bunnei](https://github.com/bunnei)|Yes|
 |[1012](https://github.com/yuzu-emu/yuzu/pull/1012)|[7b98ac7](https://github.com/yuzu-emu/yuzu/pull/1012/files/)|filesystem: Create directory if it dosen't exist on open|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
