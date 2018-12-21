@@ -2,15 +2,15 @@
 
 Scroll down for the original README.md!
 
-Base revision: 29548bbe86fd8e29316ba5321f1c32b60cbb669d
+Base revision: 83e3e30d0ee7bded79d75a503222abe3565e35a0
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4508](https://github.com/citra-emu/citra/pull/4508)|[4e41399](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
-|[4500](https://github.com/citra-emu/citra/pull/4500)|[9293760](https://github.com/citra-emu/citra/pull/4500/files/)|Memory: sync rasterizer cache mark to fix LLE applet crash|[wwylele](https://github.com/wwylele)|Yes|
-|[4496](https://github.com/citra-emu/citra/pull/4496)|[07d6d90](https://github.com/citra-emu/citra/pull/4496/files/)|gl_rasterizer_cache/MortonCopy: avoid read/write to invalid address|[wwylele](https://github.com/wwylele)|Yes|
-|[4490](https://github.com/citra-emu/citra/pull/4490)|[5a74159](https://github.com/citra-emu/citra/pull/4490/files/)|[WIP] audio: implement DSP LLE|[wwylele](https://github.com/wwylele)|Yes|
+|[4517](https://github.com/citra-emu/citra/pull/4517)|[e949314](https://github.com/citra-emu/citra/pull/4517/files/)|[WIP] travis: Simplify macos/upload.sh|[MerryMage](https://github.com/MerryMage)|Yes|
+|[4512](https://github.com/citra-emu/citra/pull/4512)|[9008226](https://github.com/citra-emu/citra/pull/4512/files/)|Port yuzu-emu/yuzu#1902: "audio_core: Make g_sink_details internally linked"|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
+|[4508](https://github.com/citra-emu/citra/pull/4508)|[42c0303](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
+|[4490](https://github.com/citra-emu/citra/pull/4490)|[b4ee67d](https://github.com/citra-emu/citra/pull/4490/files/)|[WIP] audio: implement DSP LLE|[wwylele](https://github.com/wwylele)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
 |[4457](https://github.com/citra-emu/citra/pull/4457)|[6d46b39](https://github.com/citra-emu/citra/pull/4457/files/)|citra_qt: Remove V-Sync option|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 |[4437](https://github.com/citra-emu/citra/pull/4437)|[f042210](https://github.com/citra-emu/citra/pull/4437/files/)|citra-qt: Make hotkeys configurable via the GUI (Attempt 2)|[adityaruplaha](https://github.com/adityaruplaha)|Yes|
