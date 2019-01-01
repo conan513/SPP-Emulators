@@ -2,18 +2,17 @@
 
 Scroll down for the original README.md!
 
-Base revision: 3989c17cb088b7e1531e326eaa88fa1fb0c862eb
+Base revision: fbd0944a5ac5f666fc21ff9429f3d41923accb63
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4517](https://github.com/citra-emu/citra/pull/4517)|[e949314](https://github.com/citra-emu/citra/pull/4517/files/)|[WIP] travis: Simplify macos/upload.sh|[MerryMage](https://github.com/MerryMage)|Yes|
-|[4512](https://github.com/citra-emu/citra/pull/4512)|[9008226](https://github.com/citra-emu/citra/pull/4512/files/)|Port yuzu-emu/yuzu#1902: "audio_core: Make g_sink_details internally linked"|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
+|[4538](https://github.com/citra-emu/citra/pull/4538)|[df02ea4](https://github.com/citra-emu/citra/pull/4538/files/)|Add multiple input profile support|[valentinvanelslande](https://github.com/valentinvanelslande)|Yes|
+|[4517](https://github.com/citra-emu/citra/pull/4517)|[22e4a2b](https://github.com/citra-emu/citra/pull/4517/files/)|[WIP] travis: Simplify macos/upload.sh|[MerryMage](https://github.com/MerryMage)|Yes|
 |[4508](https://github.com/citra-emu/citra/pull/4508)|[42c0303](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
 |[4490](https://github.com/citra-emu/citra/pull/4490)|[a7a2436](https://github.com/citra-emu/citra/pull/4490/files/)|audio: implement DSP LLE|[wwylele](https://github.com/wwylele)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
 |[4457](https://github.com/citra-emu/citra/pull/4457)|[6d46b39](https://github.com/citra-emu/citra/pull/4457/files/)|citra_qt: Remove V-Sync option|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4437](https://github.com/citra-emu/citra/pull/4437)|[e0ac741](https://github.com/citra-emu/citra/pull/4437/files/)|citra-qt: Make hotkeys configurable via the GUI (Attempt 2)|[adityaruplaha](https://github.com/adityaruplaha)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 
 
