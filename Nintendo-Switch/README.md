@@ -2,18 +2,18 @@
 
 Scroll down for the original README.md!
 
-Base revision: f96bb2520b9a20a2b40088a3f1be99a6e6e719b9
+Base revision: 59c665b28eccdbfc49ce9dcfad8cbeb3cea19f37
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[1](https://github.com/yuzu-emu/yuzu-canary/pull/1)|[a8dfe54](https://github.com/yuzu-emu/yuzu-canary/pull/1/files/)|Canary Base|[chris062689](https://github.com/chris062689)|Yes|
-|[1961](https://github.com/yuzu-emu/yuzu/pull/1961)|[97fb617](https://github.com/yuzu-emu/yuzu/pull/1961/files/)|gl_rasterizer_cache: Texture view if shader samples array but OGL is not|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
-|[1944](https://github.com/yuzu-emu/yuzu/pull/1944)|[c6da772](https://github.com/yuzu-emu/yuzu/pull/1944/files/)|Port citra-emu/citra#4187: "Qt/Configure: Use sidebar to divide tabs into smaller groups"|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[1931](https://github.com/yuzu-emu/yuzu/pull/1931)|[758d1e6](https://github.com/yuzu-emu/yuzu/pull/1931/files/)|mii: Implement MiiManager backend and several mii service commands|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
+|[1990](https://github.com/yuzu-emu/yuzu/pull/1990)|[fc8a878](https://github.com/yuzu-emu/yuzu/pull/1990/files/)|gl_rasterizer_cache: Use GL_STREAM_COPY for PBOs|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
+|[1987](https://github.com/yuzu-emu/yuzu/pull/1987)|[99eb1e5](https://github.com/yuzu-emu/yuzu/pull/1987/files/)|gl_shader_cache: Use explicit bindings|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
+|[1959](https://github.com/yuzu-emu/yuzu/pull/1959)|[ee0f563](https://github.com/yuzu-emu/yuzu/pull/1959/files/)|settings: Add support for setting the RTC manually|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
+|[1939](https://github.com/yuzu-emu/yuzu/pull/1939)|[0f887da](https://github.com/yuzu-emu/yuzu/pull/1939/files/)|applets: Implement HLE web browser applet (LibAppletOff)|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
+|[1908](https://github.com/yuzu-emu/yuzu/pull/1908)|[b56dcac](https://github.com/yuzu-emu/yuzu/pull/1908/files/)|video_core/GPU   Implemented the GPU PFIFO puller semaphore operations.|[kmather73](https://github.com/kmather73)|Yes|
 |[1904](https://github.com/yuzu-emu/yuzu/pull/1904)|[3702a67](https://github.com/yuzu-emu/yuzu/pull/1904/files/)|gl_rasterizer: Implement a more accurate fermi 2D copy.|[bunnei](https://github.com/bunnei)|Yes|
-|[1878](https://github.com/yuzu-emu/yuzu/pull/1878)|[b1bac99](https://github.com/yuzu-emu/yuzu/pull/1878/files/)|Workaround for BOTW (and others?) deadlock on boot|[heapo](https://github.com/heapo)|Yes|
 |[1703](https://github.com/yuzu-emu/yuzu/pull/1703)|[09d8109](https://github.com/yuzu-emu/yuzu/pull/1703/files/)|[DO NOT MERGE] nvdrv: Stub nvdec/vic ioctls to bypass nvdec movies|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
-|[1603](https://github.com/yuzu-emu/yuzu/pull/1603)|[fd98bf1](https://github.com/yuzu-emu/yuzu/pull/1603/files/)|Preliminary implementation of LDG (continuation)|[bunnei](https://github.com/bunnei)|Yes|
 |[1012](https://github.com/yuzu-emu/yuzu/pull/1012)|[7b98ac7](https://github.com/yuzu-emu/yuzu/pull/1012/files/)|filesystem: Create directory if it dosen't exist on open|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
 |[615](https://github.com/yuzu-emu/yuzu/pull/615)|[c15b401](https://github.com/yuzu-emu/yuzu/pull/615/files/)|Ignore asserts - DO NOT CHECK IN|[bunnei](https://github.com/bunnei)|Yes|
 
