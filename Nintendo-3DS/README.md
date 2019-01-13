@@ -2,14 +2,14 @@
 
 Scroll down for the original README.md!
 
-Base revision: 941d241e7dfec7b512bb2253fac194c8764019fa
+Base revision: 4f23d5d69e4186792da70a0739e3fd1faa002a0f
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
 |[4538](https://github.com/citra-emu/citra/pull/4538)|[62b40e9](https://github.com/citra-emu/citra/pull/4538/files/)|Add multiple input profile support|[valentinvanelslande](https://github.com/valentinvanelslande)|Yes|
 |[4517](https://github.com/citra-emu/citra/pull/4517)|[22e4a2b](https://github.com/citra-emu/citra/pull/4517/files/)|[WIP] travis: Simplify macos/upload.sh|[MerryMage](https://github.com/MerryMage)|Yes|
-|[4490](https://github.com/citra-emu/citra/pull/4490)|[a7a2436](https://github.com/citra-emu/citra/pull/4490/files/)|audio: implement DSP LLE|[wwylele](https://github.com/wwylele)|Yes|
+|[4508](https://github.com/citra-emu/citra/pull/4508)|[056ecaf](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg/WMF AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
 |[4457](https://github.com/citra-emu/citra/pull/4457)|[6d46b39](https://github.com/citra-emu/citra/pull/4457/files/)|citra_qt: Remove V-Sync option|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
