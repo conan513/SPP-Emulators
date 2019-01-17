@@ -2,13 +2,11 @@
 
 Scroll down for the original README.md!
 
-Base revision: bc879ae88056eef55709f0b683e11a4b8b70ffd2
+Base revision: 7c6bb8c17f007595f149089fa8033c1b540a283f
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[1](https://github.com/yuzu-emu/yuzu-canary/pull/1)|[a8dfe54](https://github.com/yuzu-emu/yuzu-canary/pull/1/files/)|Canary Base|[chris062689](https://github.com/chris062689)|Yes|
-|[2016](https://github.com/yuzu-emu/yuzu/pull/2016)|[b6d1cf9](https://github.com/yuzu-emu/yuzu/pull/2016/files/)|Implement BGRA8 framebuffer Pixel Format|[greggameplayer](https://github.com/greggameplayer)|Yes|
-|[2012](https://github.com/yuzu-emu/yuzu/pull/2012)|[c7f9124](https://github.com/yuzu-emu/yuzu/pull/2012/files/)|[WIP] Asynchronous GPU command processing|[bunnei](https://github.com/bunnei)|Yes|
 |[2008](https://github.com/yuzu-emu/yuzu/pull/2008)|[19cf995](https://github.com/yuzu-emu/yuzu/pull/2008/files/)|gl_rasterizer_cache: Use dirty flags for framebuffers|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
 |[2002](https://github.com/yuzu-emu/yuzu/pull/2002)|[877a978](https://github.com/yuzu-emu/yuzu/pull/2002/files/)|gl_rasterizer: Use DSA for VAOs and buffers|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
 |[1987](https://github.com/yuzu-emu/yuzu/pull/1987)|[6084fd7](https://github.com/yuzu-emu/yuzu/pull/1987/files/)|gl_shader_cache: Use explicit bindings|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
