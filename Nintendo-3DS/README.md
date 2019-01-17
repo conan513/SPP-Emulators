@@ -2,14 +2,15 @@
 
 Scroll down for the original README.md!
 
-Base revision: 4f23d5d69e4186792da70a0739e3fd1faa002a0f
+Base revision: e1d1dcdcd93004b656e9c10eed7d9ff35604ee45
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
+|[4569](https://github.com/citra-emu/citra/pull/4569)|[5f0dcd5](https://github.com/citra-emu/citra/pull/4569/files/)|multiplayer: minor UI fixes|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
 |[4538](https://github.com/citra-emu/citra/pull/4538)|[62b40e9](https://github.com/citra-emu/citra/pull/4538/files/)|Add multiple input profile support|[valentinvanelslande](https://github.com/valentinvanelslande)|Yes|
 |[4517](https://github.com/citra-emu/citra/pull/4517)|[22e4a2b](https://github.com/citra-emu/citra/pull/4517/files/)|[WIP] travis: Simplify macos/upload.sh|[MerryMage](https://github.com/MerryMage)|Yes|
-|[4508](https://github.com/citra-emu/citra/pull/4508)|[056ecaf](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg/WMF AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
+|[4508](https://github.com/citra-emu/citra/pull/4508)|[41be572](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg/WMF AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
 |[4457](https://github.com/citra-emu/citra/pull/4457)|[6d46b39](https://github.com/citra-emu/citra/pull/4457/files/)|citra_qt: Remove V-Sync option|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
