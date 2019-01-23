@@ -2,14 +2,12 @@
 
 Scroll down for the original README.md!
 
-Base revision: 7c6bb8c17f007595f149089fa8033c1b540a283f
+Base revision: d5a4707f659010061dd07a2a7af4e1c88a8796ae
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[1](https://github.com/yuzu-emu/yuzu-canary/pull/1)|[a8dfe54](https://github.com/yuzu-emu/yuzu-canary/pull/1/files/)|Canary Base|[chris062689](https://github.com/chris062689)|Yes|
-|[2008](https://github.com/yuzu-emu/yuzu/pull/2008)|[19cf995](https://github.com/yuzu-emu/yuzu/pull/2008/files/)|gl_rasterizer_cache: Use dirty flags for framebuffers|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
-|[2002](https://github.com/yuzu-emu/yuzu/pull/2002)|[877a978](https://github.com/yuzu-emu/yuzu/pull/2002/files/)|gl_rasterizer: Use DSA for VAOs and buffers|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
-|[1987](https://github.com/yuzu-emu/yuzu/pull/1987)|[6084fd7](https://github.com/yuzu-emu/yuzu/pull/1987/files/)|gl_shader_cache: Use explicit bindings|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
+|[2021](https://github.com/yuzu-emu/yuzu/pull/2021)|[6b5a741](https://github.com/yuzu-emu/yuzu/pull/2021/files/)|gl_shader_cache: Disk based shader cache|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
 |[1904](https://github.com/yuzu-emu/yuzu/pull/1904)|[3702a67](https://github.com/yuzu-emu/yuzu/pull/1904/files/)|gl_rasterizer: Implement a more accurate fermi 2D copy.|[bunnei](https://github.com/bunnei)|Yes|
 |[1703](https://github.com/yuzu-emu/yuzu/pull/1703)|[09d8109](https://github.com/yuzu-emu/yuzu/pull/1703/files/)|[DO NOT MERGE] nvdrv: Stub nvdec/vic ioctls to bypass nvdec movies|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
 |[1012](https://github.com/yuzu-emu/yuzu/pull/1012)|[7b98ac7](https://github.com/yuzu-emu/yuzu/pull/1012/files/)|filesystem: Create directory if it dosen't exist on open|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
