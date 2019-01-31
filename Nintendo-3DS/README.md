@@ -7,7 +7,10 @@ Base revision: bad2e084e3032aec6e817e5fc01b4ab1dbfe8a6d
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4599](https://github.com/citra-emu/citra/pull/4599)|[1190a33](https://github.com/citra-emu/citra/pull/4599/files/)|Common: make BitField endianness-aware|[wwylele](https://github.com/wwylele)|Yes|
+|[4610](https://github.com/citra-emu/citra/pull/4610)|[8481ca6](https://github.com/citra-emu/citra/pull/4610/files/)|Implement UI for adding/editing/deleting cheats|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
+|[4608](https://github.com/citra-emu/citra/pull/4608)|[3a7a686](https://github.com/citra-emu/citra/pull/4608/files/)|Kernel/SharedMemory: make owner_process a raw pointer|[wwylele](https://github.com/wwylele)|Yes|
+|[4603](https://github.com/citra-emu/citra/pull/4603)|[d388fe5](https://github.com/citra-emu/citra/pull/4603/files/)|gdbstub: only let Execute breakpoints write/restore BKPT opcodes into memory|[DimitriPilot3](https://github.com/DimitriPilot3)|Yes|
+|[4599](https://github.com/citra-emu/citra/pull/4599)|[104829a](https://github.com/citra-emu/citra/pull/4599/files/)|Common: make BitField endianness-aware|[wwylele](https://github.com/wwylele)|Yes|
 |[4583](https://github.com/citra-emu/citra/pull/4583)|[c6d623f](https://github.com/citra-emu/citra/pull/4583/files/)|citra_qt: Fix saving screenshot when no file extension is provided|[xperia64](https://github.com/xperia64)|Yes|
 |[4508](https://github.com/citra-emu/citra/pull/4508)|[41be572](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg/WMF AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
