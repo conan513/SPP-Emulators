@@ -2,19 +2,17 @@
 
 Scroll down for the original README.md!
 
-Base revision: bad2e084e3032aec6e817e5fc01b4ab1dbfe8a6d
+Base revision: f620c862f356d451455165f9b7491d8705cbec13
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4610](https://github.com/citra-emu/citra/pull/4610)|[8481ca6](https://github.com/citra-emu/citra/pull/4610/files/)|Implement UI for adding/editing/deleting cheats|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
+|[4619](https://github.com/citra-emu/citra/pull/4619)|[b5f2318](https://github.com/citra-emu/citra/pull/4619/files/)|gl_rasterizer: change shadow_texture_bias from shader config to shader uniform|[wwylele](https://github.com/wwylele)|Yes|
+|[4614](https://github.com/citra-emu/citra/pull/4614)|[6382d9b](https://github.com/citra-emu/citra/pull/4614/files/)|NWM_UDS: move states into the class|[wwylele](https://github.com/wwylele)|Yes|
+|[4610](https://github.com/citra-emu/citra/pull/4610)|[433176a](https://github.com/citra-emu/citra/pull/4610/files/)|Implement UI for adding/editing/deleting cheats|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
 |[4608](https://github.com/citra-emu/citra/pull/4608)|[3a7a686](https://github.com/citra-emu/citra/pull/4608/files/)|Kernel/SharedMemory: make owner_process a raw pointer|[wwylele](https://github.com/wwylele)|Yes|
-|[4603](https://github.com/citra-emu/citra/pull/4603)|[d388fe5](https://github.com/citra-emu/citra/pull/4603/files/)|gdbstub: only let Execute breakpoints write/restore BKPT opcodes into memory|[DimitriPilot3](https://github.com/DimitriPilot3)|Yes|
-|[4599](https://github.com/citra-emu/citra/pull/4599)|[104829a](https://github.com/citra-emu/citra/pull/4599/files/)|Common: make BitField endianness-aware|[wwylele](https://github.com/wwylele)|Yes|
-|[4583](https://github.com/citra-emu/citra/pull/4583)|[c6d623f](https://github.com/citra-emu/citra/pull/4583/files/)|citra_qt: Fix saving screenshot when no file extension is provided|[xperia64](https://github.com/xperia64)|Yes|
 |[4508](https://github.com/citra-emu/citra/pull/4508)|[41be572](https://github.com/citra-emu/citra/pull/4508/files/)|[WIP] CoreAudio::HLE: Add FFmpeg/WMF AAC decoder|[B3n30](https://github.com/B3n30)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
-|[4437](https://github.com/citra-emu/citra/pull/4437)|[80ebd75](https://github.com/citra-emu/citra/pull/4437/files/)|citra-qt: Make hotkeys configurable via the GUI (Attempt 2)|[adityaruplaha](https://github.com/adityaruplaha)|Yes|
 |[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 
 
