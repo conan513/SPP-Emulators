@@ -2,13 +2,19 @@
 
 Scroll down for the original README.md!
 
-Base revision: f09d1dffd16ab857d6cf75b862aa0b01777e5673
+Base revision: 2bb02a0b7896320e6fb7cef6792fa8faeb095091
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[1](https://github.com/yuzu-emu/yuzu-canary/pull/1)|[a8dfe54](https://github.com/yuzu-emu/yuzu-canary/pull/1/files/)|Canary Base|[chris062689](https://github.com/chris062689)|Yes|
-|[2055](https://github.com/yuzu-emu/yuzu/pull/2055)|[bc0a28b](https://github.com/yuzu-emu/yuzu/pull/2055/files/)|Asynchronous GPU command processing|[bunnei](https://github.com/bunnei)|Yes|
-|[1904](https://github.com/yuzu-emu/yuzu/pull/1904)|[35e1118](https://github.com/yuzu-emu/yuzu/pull/1904/files/)|gl_rasterizer: Implement a more accurate fermi 2D copy.|[bunnei](https://github.com/bunnei)|Yes|
+|[2135](https://github.com/yuzu-emu/yuzu/pull/2135)|[2677cc8](https://github.com/yuzu-emu/yuzu/pull/2135/files/)|DO NOT MERGE Implemented a lil edge case on RecreateSurface.|[FernandoS27](https://github.com/FernandoS27)|Yes|
+|[2129](https://github.com/yuzu-emu/yuzu/pull/2129)|[a8d4927](https://github.com/yuzu-emu/yuzu/pull/2129/files/)|Correct CNTPCT from using CPU Cycles to using Clock Cycles|[FernandoS27](https://github.com/FernandoS27)|Yes|
+|[2122](https://github.com/yuzu-emu/yuzu/pull/2122)|[ae6c052](https://github.com/yuzu-emu/yuzu/pull/2122/files/)|vk_resource_manager: Implement fence and command buffer allocator|[ReinUsesLisp](https://github.com/ReinUsesLisp)|Yes|
+|[2121](https://github.com/yuzu-emu/yuzu/pull/2121)|[ed2a3c7](https://github.com/yuzu-emu/yuzu/pull/2121/files/)|Improve the Accuracy of the Rasterizer Cache through a Texception Pass|[FernandoS27](https://github.com/FernandoS27)|Yes|
+|[2120](https://github.com/yuzu-emu/yuzu/pull/2120)|[8fc8cdf](https://github.com/yuzu-emu/yuzu/pull/2120/files/)|Fixes Unicode Key File Directories|[Jungorend](https://github.com/Jungorend)|Yes|
+|[2119](https://github.com/yuzu-emu/yuzu/pull/2119)|[bb41683](https://github.com/yuzu-emu/yuzu/pull/2119/files/)|rasterizer_cache_gl: Only do fast layered copy on the same format.|[FernandoS27](https://github.com/FernandoS27)|Yes|
+|[2118](https://github.com/yuzu-emu/yuzu/pull/2118)|[10682ad](https://github.com/yuzu-emu/yuzu/pull/2118/files/)|shader_decompiler: Improve Accuracy of Attribute Interpolation.|[FernandoS27](https://github.com/FernandoS27)|Yes|
+|[2055](https://github.com/yuzu-emu/yuzu/pull/2055)|[8ba6542](https://github.com/yuzu-emu/yuzu/pull/2055/files/)|Asynchronous GPU command processing|[bunnei](https://github.com/bunnei)|Yes|
 |[1703](https://github.com/yuzu-emu/yuzu/pull/1703)|[09d8109](https://github.com/yuzu-emu/yuzu/pull/1703/files/)|[DO NOT MERGE] nvdrv: Stub nvdec/vic ioctls to bypass nvdec movies|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
 |[1012](https://github.com/yuzu-emu/yuzu/pull/1012)|[7b98ac7](https://github.com/yuzu-emu/yuzu/pull/1012/files/)|filesystem: Create directory if it dosen't exist on open|[DarkLordZach](https://github.com/DarkLordZach)|Yes|
 |[615](https://github.com/yuzu-emu/yuzu/pull/615)|[c15b401](https://github.com/yuzu-emu/yuzu/pull/615/files/)|Ignore asserts - DO NOT CHECK IN|[bunnei](https://github.com/bunnei)|Yes|
