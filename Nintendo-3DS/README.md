@@ -2,25 +2,18 @@
 
 Scroll down for the original README.md!
 
-Base revision: 90213530352722f195f2b80b2e2ed702d9262572
+Base revision: ad1cfc8d50b266f627f8000ba42a351a20ced21d
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4636](https://github.com/citra-emu/citra/pull/4636)|[6cda8ab](https://github.com/citra-emu/citra/pull/4636/files/)|Add Frame Time Recording|[BreadFish64](https://github.com/BreadFish64)|Yes|
-|[4632](https://github.com/citra-emu/citra/pull/4632)|[1995e8f](https://github.com/citra-emu/citra/pull/4632/files/)|service/soc_u: Implement getaddrinfo and getnameinfo|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
-|[4630](https://github.com/citra-emu/citra/pull/4630)|[7074dab](https://github.com/citra-emu/citra/pull/4630/files/)|Memory: don't lock hle mutex in memory read/write|[wwylele](https://github.com/wwylele)|Yes|
-|[4629](https://github.com/citra-emu/citra/pull/4629)|[ba4f777](https://github.com/citra-emu/citra/pull/4629/files/)|Port minor changes for BitField from yuzu|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4617](https://github.com/citra-emu/citra/pull/4617)|[e6feef9](https://github.com/citra-emu/citra/pull/4617/files/)|HLE/IPC: clean up System::GetInstance|[wwylele](https://github.com/wwylele)|Yes|
-|[4616](https://github.com/citra-emu/citra/pull/4616)|[4d10a2d](https://github.com/citra-emu/citra/pull/4616/files/)|Cleanup System::GetInstance reference - Part 1|[wwylele](https://github.com/wwylele)|Yes|
-|[4613](https://github.com/citra-emu/citra/pull/4613)|[d63acfc](https://github.com/citra-emu/citra/pull/4613/files/)|video_core: add GLES support|[BreadFish64](https://github.com/BreadFish64)|Yes|
+|[4659](https://github.com/citra-emu/citra/pull/4659)|[af22dd7](https://github.com/citra-emu/citra/pull/4659/files/)|Force dedicated AMD Card for switchable Graphics |[FearlessTobi](https://github.com/FearlessTobi)|Yes|
+|[4636](https://github.com/citra-emu/citra/pull/4636)|[b0973aa](https://github.com/citra-emu/citra/pull/4636/files/)|Add Frame Time Recording|[BreadFish64](https://github.com/BreadFish64)|Yes|
+|[4627](https://github.com/citra-emu/citra/pull/4627)|[931895d](https://github.com/citra-emu/citra/pull/4627/files/)|citra_qt: when opening a cia file directly, make Citra ask to install it|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
+|[4618](https://github.com/citra-emu/citra/pull/4618)|[a6d9baa](https://github.com/citra-emu/citra/pull/4618/files/)|FS: pass down program ID for archive operation (cleanup System::GetInstance part 3)|[wwylele](https://github.com/wwylele)|Yes|
 |[4610](https://github.com/citra-emu/citra/pull/4610)|[433176a](https://github.com/citra-emu/citra/pull/4610/files/)|Implement UI for adding/editing/deleting cheats|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
-|[4608](https://github.com/citra-emu/citra/pull/4608)|[3a7a686](https://github.com/citra-emu/citra/pull/4608/files/)|Kernel/SharedMemory: make owner_process a raw pointer|[wwylele](https://github.com/wwylele)|Yes|
-|[4602](https://github.com/citra-emu/citra/pull/4602)|[fd968b4](https://github.com/citra-emu/citra/pull/4602/files/)|Implement dumping audio+video to video files|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
-|[4598](https://github.com/citra-emu/citra/pull/4598)|[d3d53ba](https://github.com/citra-emu/citra/pull/4598/files/)|common: decouple getting and setting user paths|[BreadFish64](https://github.com/BreadFish64)|Yes|
-|[4596](https://github.com/citra-emu/citra/pull/4596)|[602334c](https://github.com/citra-emu/citra/pull/4596/files/)|Fix mouse touchscreen in SBS 3D mode|[CarlKenner](https://github.com/CarlKenner)|Yes|
+|[4602](https://github.com/citra-emu/citra/pull/4602)|[8b31f9c](https://github.com/citra-emu/citra/pull/4602/files/)|Implement dumping audio+video to video files|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
 |[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
-|[4396](https://github.com/citra-emu/citra/pull/4396)|[8a24cbb](https://github.com/citra-emu/citra/pull/4396/files/)|fs_user: Add a delay for each file open|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
 
 
 End of merge log. You can find the original README.md below the break.
