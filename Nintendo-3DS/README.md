@@ -2,18 +2,15 @@
 
 Scroll down for the original README.md!
 
-Base revision: ad1cfc8d50b266f627f8000ba42a351a20ced21d
+Base revision: 2ff7ed420018349a1f151d59b000d14f287032ab
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[a53a8d3](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4659](https://github.com/citra-emu/citra/pull/4659)|[af22dd7](https://github.com/citra-emu/citra/pull/4659/files/)|Force dedicated AMD Card for switchable Graphics |[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4636](https://github.com/citra-emu/citra/pull/4636)|[b0973aa](https://github.com/citra-emu/citra/pull/4636/files/)|Add Frame Time Recording|[BreadFish64](https://github.com/BreadFish64)|Yes|
-|[4627](https://github.com/citra-emu/citra/pull/4627)|[931895d](https://github.com/citra-emu/citra/pull/4627/files/)|citra_qt: when opening a cia file directly, make Citra ask to install it|[FearlessTobi](https://github.com/FearlessTobi)|Yes|
-|[4618](https://github.com/citra-emu/citra/pull/4618)|[a6d9baa](https://github.com/citra-emu/citra/pull/4618/files/)|FS: pass down program ID for archive operation (cleanup System::GetInstance part 3)|[wwylele](https://github.com/wwylele)|Yes|
-|[4610](https://github.com/citra-emu/citra/pull/4610)|[433176a](https://github.com/citra-emu/citra/pull/4610/files/)|Implement UI for adding/editing/deleting cheats|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
-|[4602](https://github.com/citra-emu/citra/pull/4602)|[8b31f9c](https://github.com/citra-emu/citra/pull/4602/files/)|Implement dumping audio+video to video files|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
-|[4472](https://github.com/citra-emu/citra/pull/4472)|[4f4deb6](https://github.com/citra-emu/citra/pull/4472/files/)|HLE: Move NS:S into APT and remove NS|[jroweboy](https://github.com/jroweboy)|Yes|
+|[4716](https://github.com/citra-emu/citra/pull/4716)|[f565ea8](https://github.com/citra-emu/citra/pull/4716/files/)|HLE/IPC: HLEContext can memorize the client thread and use it for SleepClientThread|[wwylele](https://github.com/wwylele)|Yes|
+|[4703](https://github.com/citra-emu/citra/pull/4703)|[fafaa8c](https://github.com/citra-emu/citra/pull/4703/files/)|[EXPERIMENT] gl_rasterizer: decrease vertex buffer size|[wwylele](https://github.com/wwylele)|Yes|
+|[4700](https://github.com/citra-emu/citra/pull/4700)|[d7fbc1c](https://github.com/citra-emu/citra/pull/4700/files/)|applets/swkbd: Add callback support|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
+|[3910](https://github.com/citra-emu/citra/pull/3910)|[88a011e](https://github.com/citra-emu/citra/pull/3910/files/)|gl_rasterizer: implement mipmap by forwarding PICA mipmap configuration|[wwylele](https://github.com/wwylele)|Yes|
 
 
 End of merge log. You can find the original README.md below the break.
