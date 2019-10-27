@@ -1,0 +1,1 @@
+start %CD%\xenia.exe --log_file=stdout
