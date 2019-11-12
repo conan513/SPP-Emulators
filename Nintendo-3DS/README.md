@@ -2,18 +2,13 @@
 
 Scroll down for the original README.md!
 
-Base revision: 45ff10c9a07600c8e258c55edf2d69c9137064fd
+Base revision: 5fa71d425b6ba3f7f289bee6b2e737b617b04598
 
 |Pull Request|Commit|Title|Author|Merged?|
 |----|----|----|----|----|
 |[6](https://github.com/citra-emu/citra-canary/pull/6)|[d9c3e53](https://github.com/citra-emu/citra-canary/pull/6/files/)|Canary Base (MinGW Test)|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4850](https://github.com/citra-emu/citra/pull/4850)|[0f1d383](https://github.com/citra-emu/citra/pull/4850/files/)|externals: Update dynarmic to e814b4|[MerryMage](https://github.com/MerryMage)|Yes|
-|[4847](https://github.com/citra-emu/citra/pull/4847)|[907e25b](https://github.com/citra-emu/citra/pull/4847/files/)|core, citra_qt: IPC Recorder|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
-|[4844](https://github.com/citra-emu/citra/pull/4844)|[c602e89](https://github.com/citra-emu/citra/pull/4844/files/)|Use a clear texture instead of texture 0 (solid black) in the GL rasterizer|[hamish-milne](https://github.com/hamish-milne)|Yes|
-|[4739](https://github.com/citra-emu/citra/pull/4739)|[07e86ff](https://github.com/citra-emu/citra/pull/4739/files/)|Use Azure Pipeline to build Linux Flatpaks|[liushuyu](https://github.com/liushuyu)|Yes|
-|[4703](https://github.com/citra-emu/citra/pull/4703)|[fafaa8c](https://github.com/citra-emu/citra/pull/4703/files/)|[EXPERIMENT] gl_rasterizer: decrease vertex buffer size|[wwylele](https://github.com/wwylele)|Yes|
-|[4602](https://github.com/citra-emu/citra/pull/4602)|[ec9d084](https://github.com/citra-emu/citra/pull/4602/files/)|Implement dumping audio+video to video files|[zhaowenlan1779](https://github.com/zhaowenlan1779)|Yes|
-|[4578](https://github.com/citra-emu/citra/pull/4578)|[03f4023](https://github.com/citra-emu/citra/pull/4578/files/)|renderer_opengl: Add support for custom shaders|[xperia64](https://github.com/xperia64)|Yes|
+|[4956](https://github.com/citra-emu/citra/pull/4956)|[cc9bcf3](https://github.com/citra-emu/citra/pull/4956/files/)|Fixes to game list sorting|[vitor-k](https://github.com/vitor-k)|Yes|
+|[4754](https://github.com/citra-emu/citra/pull/4754)|[0f23efd](https://github.com/citra-emu/citra/pull/4754/files/)|HTTP_C::Implement Context::MakeRequest|[B3n30](https://github.com/B3n30)|Yes|
 
 
 End of merge log. You can find the original README.md below the break.
@@ -35,6 +30,8 @@ Citra emulates a subset of 3DS hardware and therefore is useful for running/debu
 Citra is licensed under the GPLv2 (or any later version). Refer to the license.txt file included. Please read the [FAQ](https://citra-emu.org/wiki/faq/) before getting started with the project.
 
 Check out our [website](https://citra-emu.org/)!
+
+Need help? Check out our [asking for help](https://citra-emu.org/help/reference/asking/) guide.
 
 For development discussion, please join us at #citra-dev on freenode.
 
